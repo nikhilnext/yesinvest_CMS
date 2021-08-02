@@ -1,0 +1,214 @@
+var gethtml = $("#index_page").html(); 
+//console.log(gethtml);
+
+var base64convert = window.btoa(unescape(encodeURIComponent(gethtml)))
+console.log(base64convert)
+
+-----------
+
+CjxzZWN0aW9uIGNsYXNzPSJtb25leXdvcmtfc2VjIj4KPGg0IHN0eWxlPSJtYXJnaW46IDBweDsgcGFkZGluZzogMTBweCAyNXB4OyBjb2xvcjogIzQwNDA0MDsgZm9udC1zaXplOiAxNHB4OyBmb250LXdlaWdodDogNzAwIj48L2g0PgoKCgo8aDEgY2xhc3M9Im1vbmV5d29ya19oZCIgc3R5bGU9Im1hcmdpbjogMHB4OyBwYWRkaW5nOiAyNXB4IDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzQwNDA0MDsgZm9udC1zaXplOiAzNnB4OyBmb250LXdlaWdodDogMzAwIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOiAzNnB4Ij5NYWtlIHlvdXIgbW9uZXkgd29yayBmb3IgeW91PC9zcGFuPjwvaDE+CjxkaXYgY2xhc3M9Im1vbmV5X3dvcmtfc2VjIiBzdHlsZT0iYmFja2dyb3VuZDogdXJsKGltYWdlcy9ob21lLWxsdXN0cmF0aW9uLnBuZykgbm8tcmVwZWF0IGJvdHRvbTsgaGVpZ2h0OiA0NTNweCI+CjxkaXYgY2xhc3M9Im1vbmV5X3dvcmtfaW5uZXIiIHN0eWxlPSJtYXJnaW46IDhweCBhdXRvOyB3aWR0aDogODAlIj4KPGRpdiBjbGFzcz0icm93Ij4KPGRpdiBjbGFzcz0iY29sLXNtLTMgY29sLXhzLTYiIHN0eWxlPSJmb250LXNpemU6IDE0cHgiPgo8ZGl2IGNsYXNzPSJtb25leV93b3JrX2hkIiBzdHlsZT0iaGVpZ2h0OiA2NXB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IGNvbG9yOiAjNDA0MDQwOyBmb250LXNpemU6IDM2cHg7IGZvbnQtd2VpZ2h0OiAzMDAiPjxzcGFuIHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlIj4zPC9zcGFuPjxzcGFuIGNsYXNzPSJmb250MjQiIHN0eWxlPSJmb250LXdlaWdodDogYm9sZDsgdmVydGljYWwtYWxpZ246IG1pZGRsZTsgZm9udC1zaXplOiAyNHB4Ij5pbjwvc3Bhbj48c3BhbiBzdHlsZT0idmVydGljYWwtYWxpZ246IG1pZGRsZSI+MTwvc3Bhbj48L2Rpdj4KPGRpdiBjbGFzcz0ibW9uZXlfd29ya19jb250IiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzQwNDA0MDsgZm9udC1zaXplOiAxNHB4OyBmb250LXdlaWdodDogYm9sZCI+IEFjY291bnQgZm9yIFNlYW1sZXNzPGJyPgpJbnZlc3RtZW50IEV4cGVyaWVuY2U8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9ImNvbC1zbS0zIGNvbC14cy02IiBzdHlsZT0iZm9udC1zaXplOiAxNHB4Ij4KPGRpdiBjbGFzcz0ibW9uZXlfd29ya19oZCIgc3R5bGU9ImhlaWdodDogNjVweDsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzQwNDA0MDsgZm9udC1zaXplOiAzNnB4OyBmb250LXdlaWdodDogMzAwIj48c3BhbiBzdHlsZT0idmVydGljYWwtYWxpZ246IG1pZGRsZSI+NS41PC9zcGFuPjxzcGFuIGNsYXNzPSJmb250MjQiIHN0eWxlPSJmb250LXdlaWdodDogYm9sZDsgdmVydGljYWwtYWxpZ246IG1pZGRsZTsgZm9udC1zaXplOiAyNHB4Ij4lPC9zcGFuPjwvZGl2Pgo8ZGl2IGNsYXNzPSJtb25leV93b3JrX2NvbnQiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7IGNvbG9yOiAjNDA0MDQwOyBmb250LXNpemU6IDE0cHg7IGZvbnQtd2VpZ2h0OiBib2xkIj5JbnRlcmVzdCAgb248YnI+ClNhdmluZ3MgYmFsYW5jZSo8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9ImNvbC1zbS0zIGNvbC14cy02Ij4KPGRpdiBjbGFzcz0ibW9uZXlfd29ya19oZCIgc3R5bGU9ImhlaWdodDogNjVweDsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzQwNDA0MCI+PHNwYW4gY2xhc3M9ImZvbnQyNCIgc3R5bGU9ImZvbnQtc2l6ZTogMzZweDsgZm9udC13ZWlnaHQ6IDMwMDsgdmVydGljYWwtYWxpZ246IG1pZGRsZSI+NzA8L3NwYW4+PHNwYW4gY2xhc3M9ImZvbnQyNCIgc3R5bGU9ImZvbnQtd2VpZ2h0OiBib2xkOyB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyBmb250LXNpemU6IDI0cHgiPiU8c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxMnB4Ij48c3VwPiM8L3N1cD48L3NwYW4+PC9zcGFuPjwvZGl2Pgo8ZGl2IGNsYXNzPSJtb25leV93b3JrX2NvbnQiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7IGNvbG9yOiAjNDA0MDQwOyBmb250LXNpemU6IDE0cHg7IGZvbnQtd2VpZ2h0OiBib2xkIj5BY2N1cmF0ZSA8YnI+Ck1hcmtldCBQcmVkaWN0aW9uIDwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iY29sLXNtLTMgY29sLXhzLTYiIHN0eWxlPSJmb250LXNpemU6IDE0cHgiPgo8ZGl2Pgo8ZGl2IGNsYXNzPSJtb25leV93b3JrX2hkICIgc3R5bGU9ImhlaWdodDogNjVweDsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzQwNDA0MDsgZm9udC1zaXplOiAzNnB4OyBmb250LXdlaWdodDogMzAwIj48aW1nIGFsdD0iIiBoZWlnaHQ9IjUwIiBjbGFzcz0iaW1nLXJlc3BvbnNpdmUiIHN0eWxlPSJtYXJnaW46IDBweCBhdXRvOyB0ZXh0LWFsaWduOiBjZW50ZXI7IHBhZGRpbmctdG9wOiAxMHB4IiBzcmM9ImltYWdlcy9oZWFsdGhfc2NvcmUucG5nIj48L2Rpdj4KPGRpdiBjbGFzcz0ibW9uZXlfd29ya19jb250IiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzQwNDA0MDsgZm9udC1zaXplOiAxNHB4OyBmb250LXdlaWdodDogYm9sZCI+U3RvY2smbmJzcDs8YnI+CkhlYWx0aCBTY29yZSoqPC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9Im9wZW5fYWNjIiBzdHlsZT0ibWFyZ2luOiAwcHggYXV0bzsgdGV4dC1hbGlnbjogY2VudGVyOyBwYWRkaW5nLXRvcDogNDBweDsgZm9udC1zaXplOiAxNHB4Ij4gPGEgaHJlZj0iL29wZW5fYWNjb3VudD91dG1fc291cmNlPWhlYWRlci1uYXZpZ2F0aW9uJmFtcDt1dG1fbWVkaXVtPXdlYnNpdGUmYW1wO3V0bV9jYW1wYWlnbj1vcGVuLWFjY291bnQiIGNsYXNzPSJidG4gYnRuLWRlZmF1bHQgYWNfYnRuICIgc3R5bGU9InBhZGRpbmc6IDEwcHggMzBweDsgYm9yZGVyOiAxcHggc29saWQgIzAwNmFhYjsgY29sb3I6ICNmZmZmZmY7IGZvbnQtc2l6ZTogMjBweDsgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KDQ1ZGVnLCAjMDA2NGFjLCAjMDA4YWE4KTsgYmFja2dyb3VuZC1jb2xvcjogIzAwODFhOCI+T3BlbiBBY2NvdW50PC9hPiZuYnNwOzwvZGl2Pgo8c3BhbiBzdHlsZT0idG9wOiAyJTsgZm9udC1zaXplOiAxNHB4OyBvcGFjaXR5OiAwIj48aW1nIGFsdD0iIiB3aWR0aD0iNDIiIGNsYXNzPSJwYXJjaHV0ZSIgc3R5bGU9InRvcDogMiU7IG9wYWNpdHk6IDAiIHNyYz0iL2ltYWdlcy9kZWZhdWx0LXNvdXJjZS9kZWZhdWx0LWFsYnVtL2ltYWdlcy9wYXJhY2h1dGUucG5nP3NmdnJzbj03YjExYTQwMl8yIj48L3NwYW4+PHNwYW4gc3R5bGU9InRvcDogMiU7IHJpZ2h0OiAyJTsgZm9udC1zaXplOiAxNHB4OyBvcGFjaXR5OiAwIj48aW1nIGFsdD0iIiB3aWR0aD0iNDIiIGNsYXNzPSJwYXJjaHV0ZTIiIHN0eWxlPSJ0b3A6IDIlOyByaWdodDogMiU7IG9wYWNpdHk6IDAiIHNyYz0iL2ltYWdlcy9kZWZhdWx0LXNvdXJjZS9kZWZhdWx0LWFsYnVtL2ltYWdlcy9wYXJhY2h1dGUucG5nP3NmdnJzbj03YjExYTQwMl8yIj48L3NwYW4+PC9kaXY+CjwvZGl2Pgo8L3NlY3Rpb24+CgoKCjxzZWN0aW9uIGNsYXNzPSJib29raW5nX2NhYl9zZWMiIHN0eWxlPSJwYWRkaW5nOiA2MHB4IDQwcHg7IGZvbnQtc2l6ZTogMTRweDsgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KDI5MmRlZywgIzAwOGFhOCwgIzAwNjJhOCkiPgo8aDIgY2xhc3M9ImhlYWRpbmctd2hpdGUiIHN0eWxlPSJtYXJnaW46IDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogI2ZmZmZmZjsgcGFkZGluZy1ib3R0b206IDkwcHg7IGZvbnQtc2l6ZTogMzZweDsgZm9udC13ZWlnaHQ6IDMwMCI+V2UgbWFrZSBpbnZlc3RpbmcgYXMgZWFzeSBhcyBib29raW5nIGEgY2FiPC9oMj4KPGRpdiBjbGFzcz0iYm9va19jYWJfdmlkZW9fc2VjIj4KPGRpdiBjbGFzcz0icm93Ij4KPGRpdiBjbGFzcz0iY29sLXNtLTYiPgo8dWwgc3R5bGU9Im1hcmdpbjogMHB4OyBwYWRkaW5nOiAwcHgiPgogICAgPGxpIHN0eWxlPSJiYWNrZ3JvdW5kOiB1cmwoaW1hZ2VzL3llc190aWNrXzE4eDI1X3B4LnBuZykgbm8tcmVwZWF0OyBsaXN0LXN0eWxlOiBub25lOyBjb2xvcjogI2ZmZmZmZjsgbGluZS1oZWlnaHQ6IDMwcHg7IHBhZGRpbmctYm90dG9tOiA0MHB4OyBwYWRkaW5nLWxlZnQ6IDMwcHg7IGZvbnQtc2l6ZTogMjRweCI+U3RvY2sgSGVhbHRoIFNjb3JlPC9saT4KICAgIDxsaSBzdHlsZT0iYmFja2dyb3VuZDogdXJsKGltYWdlcy95ZXNfdGlja18xOHgyNV9weC5wbmcpIG5vLXJlcGVhdDsgbGlzdC1zdHlsZTogbm9uZTsgY29sb3I6ICNmZmZmZmY7IGxpbmUtaGVpZ2h0OiAzMHB4OyBwYWRkaW5nLWJvdHRvbTogNDBweDsgcGFkZGluZy1sZWZ0OiAzMHB4OyBmb250LXNpemU6IDI0cHgiPkFkdmFuY2UgVG9vbHMgJmFtcDsgQ2hhcnRzPC9saT4KICAgIDxsaSBzdHlsZT0iYmFja2dyb3VuZDogdXJsKGltYWdlcy95ZXNfdGlja18xOHgyNV9weC5wbmcpIG5vLXJlcGVhdDsgbGlzdC1zdHlsZTogbm9uZTsgY29sb3I6ICNmZmZmZmY7IGxpbmUtaGVpZ2h0OiAzMHB4OyBwYWRkaW5nLWJvdHRvbTogNDBweDsgcGFkZGluZy1sZWZ0OiAzMHB4OyBmb250LXNpemU6IDI0cHgiPkxpdmUgUG9ydGZvbGlvIFRyYWNrZXI8L2xpPgogICAgPGxpIHN0eWxlPSJiYWNrZ3JvdW5kOiB1cmwoaW1hZ2VzL3llc190aWNrXzE4eDI1X3B4LnBuZykgbm8tcmVwZWF0OyBsaXN0LXN0eWxlOiBub25lOyBjb2xvcjogI2ZmZmZmZjsgbGluZS1oZWlnaHQ6IDMwcHg7IHBhZGRpbmctYm90dG9tOiA0MHB4OyBwYWRkaW5nLWxlZnQ6IDMwcHg7IGZvbnQtc2l6ZTogMjRweCI+UmVzZWFyY2ggQmFja2VkIFNvbHV0aW9uc++7vzwvbGk+CjwvdWw+CjwvZGl2Pgo8ZGl2IGNsYXNzPSJjb2wtc20tNiBjb2wtbWQtNiI+CjxkaXYgY2xhc3M9ImZsaXAtd3JhcCIgc3R5bGU9IndpZHRoOiAxMDAlOyBoZWlnaHQ6IDI2MHB4OyBkaXNwbGF5OiB0YWJsZSI+CjxkaXYgaWQ9ImNvdmVyZmxvdyIgc3R5bGU9Im1hcmdpbjogMHB4IGF1dG87IHdpZHRoOiA5MCU7IHRleHQtYWxpZ246IGNlbnRlcjsgdmVydGljYWwtYWxpZ246IG1pZGRsZTsgZGlzcGxheTogdGFibGUtY2VsbDsiIGNsYXNzPSJmbGlwc3RlciBmbGlwc3Rlci0tdHJhbnNmb3JtIGZsaXBzdGVyLS1mbGF0IGZsaXBzdGVyLS1jbGljayBmbGlwc3Rlci0tYWN0aXZlIiB0YWJpbmRleD0iMCI+Cjx1bCBjbGFzcz0iZmxpcC1pdGVtcyBmbGlwc3Rlcl9fY29udGFpbmVyIiBzdHlsZT0iaGVpZ2h0OiAyMjdweDsgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKC0xMzJweCk7Ij4KICAgIDxsaSBpZD0iMSIgc3R5bGU9InRleHQtYWxpZ246IGxlZnQ7IG1hcmdpbi1yaWdodDogLTIzMS42cHg7IHotaW5kZXg6IDM7IiBkYXRhLXRvZ2dsZT0ibW9kYWwiIGRhdGEtdGFyZ2V0PSIjaW52ZXN0b3JWaWRlbyIgZGF0YS1mbGlwLXRpdGxlPSJSZWQiIGNsYXNzPSJmbGlwc3Rlcl9faXRlbSAgZmxpcHN0ZXJfX2l0ZW0tLWN1cnJlbnQiPjxkaXYgY2xhc3M9ImZsaXBzdGVyX19pdGVtX19jb250ZW50Ij4gJm5ic3A7PGltZyB0aXRsZT0iaGVhbHRoX2luZGljYXRvcl8yIiBzdHlsZT0iZmxvYXQ6IGxlZnQiIGFsdD0iaGVhbHRoX2luZGljYXRvcl8yIiBzcmM9ImltYWdlcy9oZWFsdGhfaW5kaWNhdG9yXzIuanBnIiBkYXRhLWRpc3BsYXltb2RlPSJPcmlnaW5hbCI+Jm5ic3A7CiAgICA8ZGl2IGNsYXNzPSJ0cmFkZXJzIiBzdHlsZT0idG9wOiAtOTBweDsgY29sb3I6ICMwMDAwMDA7IHotaW5kZXg6IDEwMDAwIj4mbmJzcDs8L2Rpdj4KICAgIDwvZGl2PjwvbGk+CiAgICA8bGkgaWQ9IjIiIHN0eWxlPSJtYXJnaW4tcmlnaHQ6IC0xMC44cHg7IHotaW5kZXg6IDE7IiBkYXRhLXRvZ2dsZT0ibW9kYWwiIGRhdGEtdGFyZ2V0PSIjdHJhZGVyVmlkZW8iIGRhdGEtZmxpcC10aXRsZT0iUmF6em1hdGF6eiIgZGF0YS1mbGlwLWNhdGVnb3J5PSJQdXJwbGVzIiBjbGFzcz0iZmxpcHN0ZXJfX2l0ZW0gIGZsaXBzdGVyX19pdGVtLS1mdXR1cmUgZmxpcHN0ZXJfX2l0ZW0tLWZ1dHVyZS0xIj48ZGl2IGNsYXNzPSJmbGlwc3Rlcl9faXRlbV9fY29udGVudCI+CiAgICA8ZGl2IGNsYXNzPSJ0cmFkZXJzIiBzdHlsZT0idG9wOiAtOTBweDsgY29sb3I6ICMwMDAwMDA7IHotaW5kZXg6IDEwMDAwIj4mbmJzcDs8L2Rpdj4KICAgIDwvZGl2PjwvbGk+CjwvdWw+CjwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPC9zZWN0aW9uPgoKCgo8c2VjdGlvbiBjbGFzcz0iZmFzdGVyX3NtYXJ0ZXJfc2VjIiBzdHlsZT0icGFkZGluZzogNjBweDsgdGV4dC1hbGlnbjogY2VudGVyIj4KPGgyIGNsYXNzPSJoZWFkaW5nLWdyZXkiIHN0eWxlPSJtYXJnaW46IDBweDsgY29sb3I6ICM4MDgwODA7IHBhZGRpbmctYm90dG9tOiAyMHB4OyBmb250LXNpemU6IDM2cHg7IGZvbnQtd2VpZ2h0OiAzMDAiPiBXZSBhbHNvIG1ha2UgaXQgZmFzdGVyIGFuZCBzbWFydGVyIDwvaDI+CjxkaXYgY2xhc3M9ImhlYWx0aF9zY29yZV9jb250IiBzdHlsZT0iY29sb3I6ICM0MDQwNDA7IHBhZGRpbmctYm90dG9tOiA4MHB4Ij5UaGUgU3RvY2sgSGVhbHRoIFNjb3JlKiogaGVscHMgeW91IG1ha2UgaW52ZXN0bWVudCBkZWNpc2lvbnMgcXVpY2tseSBhbmQgY29uZmlkZW50bHk8L2Rpdj4KPGRpdiBjbGFzcz0iaGVhbHRoX3Njb3JlX3NlYyIgc3R5bGU9Im1hcmdpbjogMHB4IGF1dG87IHRleHQtYWxpZ246IGNlbnRlcjsgZm9udC1zaXplOiAxNHB4Ij4KPGRpdiBjbGFzcz0icm93Ij4KPGRpdiBjbGFzcz0iY29sLXNtLTQiPgo8ZGl2IGNsYXNzPSJoZWFsdGhfc2NvcmVfb3V0ZXJfc2VjIiBzdHlsZT0icGFkZGluZy1ib3R0b206IDYwcHgiPgo8ZGl2IGNsYXNzPSJoZWFsdGhfc2NvcmUiIHN0eWxlPSJiYWNrZ3JvdW5kOiB1cmwoaW1hZ2VzL2hlYWx0aF9zY29yZTAxLnBuZykgbm8tcmVwZWF0OyBtYXJnaW46IDBweCBhdXRvOyB3aWR0aDogMTMwcHg7IGhlaWdodDogNjhweDsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXNpemU6IDI0cHgiPjxzcGFuIGNsYXNzPSJzY29yZV9jb3VudCIgc3R5bGU9InRvcDogMzBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyBjb2xvcjogIzJlYmY0NCI+NDA8L3NwYW4+PC9kaXY+CjxkaXYgY2xhc3M9ImhlYWx0aF9zY29yZV9zdWJfY29udCIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDYwYWI7IHBhZGRpbmctdG9wOiA1cHg7IGZvbnQtc2l6ZTogMThweCI+Jm5ic3A7IEhERkMgQmFuazwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KPGRpdiBjbGFzcz0iaGVhbHRoX3Njb3JlX291dGVyX3NlYyIgc3R5bGU9InBhZGRpbmctYm90dG9tOiA2MHB4Ij4KPGRpdiBjbGFzcz0iaGVhbHRoX3Njb3JlIiBzdHlsZT0iYmFja2dyb3VuZDogdXJsKGltYWdlcy9oZWFsdGhfc2NvcmUwMS5wbmcpIG5vLXJlcGVhdDsgbWFyZ2luOiAwcHggYXV0bzsgd2lkdGg6IDEzMHB4OyBoZWlnaHQ6IDY4cHg7IHRleHQtYWxpZ246IGNlbnRlcjsgZm9udC1zaXplOiAyNHB4Ij48c3BhbiBjbGFzcz0ic2NvcmVfY291bnQiIHN0eWxlPSJ0b3A6IDMwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgdmVydGljYWwtYWxpZ246IG1pZGRsZTsgY29sb3I6ICMyZWJmNDQiPjQxPC9zcGFuPjwvZGl2Pgo8ZGl2IGNsYXNzPSJoZWFsdGhfc2NvcmVfc3ViX2NvbnQiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7IGNvbG9yOiAjMDA2MGFiOyBwYWRkaW5nLXRvcDogNXB4OyBmb250LXNpemU6IDE4cHgiPiZuYnNwO0lUQzwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9ImNvbC1zbS00Ij4KPGRpdiBjbGFzcz0iaGVhbHRoX3Njb3JlX291dGVyX3NlYyIgc3R5bGU9InBhZGRpbmctYm90dG9tOiA2MHB4Ij4KPGRpdiBjbGFzcz0iaGVhbHRoX3Njb3JlIiBzdHlsZT0iYmFja2dyb3VuZDogdXJsKGltYWdlcy9oZWFsdGhfc2NvcmUwMS5wbmcpIG5vLXJlcGVhdDsgbWFyZ2luOiAwcHggYXV0bzsgd2lkdGg6IDEzMHB4OyBoZWlnaHQ6IDY4cHg7IHRleHQtYWxpZ246IGNlbnRlcjsgZm9udC1zaXplOiAyNHB4Ij48c3BhbiBjbGFzcz0ic2NvcmVfY291bnQiIHN0eWxlPSJ0b3A6IDMwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgdmVydGljYWwtYWxpZ246IG1pZGRsZTsgY29sb3I6ICMyZWJmNDQiPjQ3PC9zcGFuPjwvZGl2Pgo8ZGl2IGNsYXNzPSJoZWFsdGhfc2NvcmVfc3ViX2NvbnQiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7IGNvbG9yOiAjMDA2MGFiOyBwYWRkaW5nLXRvcDogNXB4OyBmb250LXNpemU6IDE4cHgiPlJJTDwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjwvZGl2Pgo8ZGl2IGNsYXNzPSJyb3ciPgo8ZGl2IGNsYXNzPSJjb2wtc20tNCI+CjxkaXYgY2xhc3M9ImhlYWx0aF9zY29yZV9vdXRlcl9zZWMiIHN0eWxlPSJwYWRkaW5nLWJvdHRvbTogNjBweCI+CjxkaXYgY2xhc3M9ImhlYWx0aF9zY29yZSIgc3R5bGU9ImJhY2tncm91bmQ6IHVybChpbWFnZXMvaGVhbHRoX3Njb3JlMDEucG5nKSBuby1yZXBlYXQ7IG1hcmdpbjogMHB4IGF1dG87IHdpZHRoOiAxMzBweDsgaGVpZ2h0OiA2OHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtc2l6ZTogMjRweCI+PHNwYW4gY2xhc3M9InNjb3JlX2NvdW50IiBzdHlsZT0idG9wOiAzMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7IGNvbG9yOiAjMmViZjQ0Ij40Mjwvc3Bhbj48L2Rpdj4KPGRpdiBjbGFzcz0iaGVhbHRoX3Njb3JlX3N1Yl9jb250IiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzAwNjBhYjsgcGFkZGluZy10b3A6IDVweDsgZm9udC1zaXplOiAxOHB4Ij5UQ1M8L2Rpdj4KPC9kaXY+CjwvZGl2Pgo8ZGl2IGNsYXNzPSJjb2wtc20tNCI+CjxkaXYgY2xhc3M9ImhlYWx0aF9zY29yZV9vdXRlcl9zZWMiIHN0eWxlPSJwYWRkaW5nLWJvdHRvbTogNjBweCI+CjxkaXYgY2xhc3M9ImhlYWx0aF9zY29yZSIgc3R5bGU9ImJhY2tncm91bmQ6IHVybChpbWFnZXMvaGVhbHRoX3Njb3JlMDEucG5nKSBuby1yZXBlYXQ7IG1hcmdpbjogMHB4IGF1dG87IHdpZHRoOiAxMzBweDsgaGVpZ2h0OiA2OHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtc2l6ZTogMjRweCI+PHNwYW4gY2xhc3M9InNjb3JlX2NvdW50IiBzdHlsZT0idG9wOiAzMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7IGNvbG9yOiAjMmViZjQ0Ij41Nzwvc3Bhbj48L2Rpdj4KPGRpdiBjbGFzcz0iaGVhbHRoX3Njb3JlX3N1Yl9jb250IiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzAwNjBhYjsgcGFkZGluZy10b3A6IDVweDsgZm9udC1zaXplOiAxOHB4Ij5Qcm9jdGVyICZhbXA7IEdhbWJsZSBIZWFsdGggTHRkPC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iY29sLXNtLTQiPgo8ZGl2IGNsYXNzPSJoZWFsdGhfc2NvcmVfb3V0ZXJfc2VjIiBzdHlsZT0icGFkZGluZy1ib3R0b206IDYwcHgiPgo8ZGl2IGNsYXNzPSJoZWFsdGhfc2NvcmUiIHN0eWxlPSJiYWNrZ3JvdW5kOiB1cmwoaW1hZ2VzL2hlYWx0aF9zY29yZTAxLnBuZykgbm8tcmVwZWF0OyBtYXJnaW46IDBweCBhdXRvOyB3aWR0aDogMTMwcHg7IGhlaWdodDogNjhweDsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXNpemU6IDI0cHgiPjxzcGFuIGNsYXNzPSJzY29yZV9jb3VudCIgc3R5bGU9InRvcDogMzBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyBjb2xvcjogIzJlYmY0NCI+NTA8L3NwYW4+PC9kaXY+CjxkaXYgY2xhc3M9ImhlYWx0aF9zY29yZV9zdWJfY29udCIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDYwYWI7IHBhZGRpbmctdG9wOiA1cHg7IGZvbnQtc2l6ZTogMThweCI+QXNpYW4gUGFpbnRzPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTRweDsgY29sb3I6ICMwMDAwMDAiPu+7vzwvc3Bhbj48L2Rpdj4KPC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPC9kaXY+Cjwvc2VjdGlvbj4KCgoKICAgIDwhLS0gVGVzdGltb25pYWwgLS0+CiAgICA8c2VjdGlvbiBjbGFzcz0iYm9va2luZ19jYWJfc2VjIj4KICAgICAgPGgyIGNsYXNzPSJoZWFkaW5nLXdoaXRlIj5IZXJl4oCZcyB3aGF0IHBlb3BsZSBhcmUgc2F5aW5nIGFib3V0IHVz4oCmPC9oMj4KICAgICAgPGRpdiBjbGFzcz0idGVzdGltb25pYWxzX2Nhcm91c2VsX3NlYyI+CiAgICAgICAgPGRpdiBpZD0ibXlDYXJvdXNlbCIgY2xhc3M9ImNhcm91c2VsIHNsaWRlIiBkYXRhLXJpZGU9ImNhcm91c2VsIj4gCiAgICAgICAgICAKICAgICAgICAgIDwhLS0gV3JhcHBlciBmb3Igc2xpZGVzIC0tPgogICAgICAgICAgPGRpdiBjbGFzcz0iY2Fyb3VzZWwtaW5uZXIiPgogICAgICAgICAgCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJpdGVtIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0ZXN0aW1vbmlhbHNfY2hhdF9ib3giPiA8c3BhbiBjbGFzcz0ibGVmdF9xdW90ZSI+Ijwvc3Bhbj48c3BhbiBjbGFzcz0icmlnaHRfcXVvdGUiPiI8L3NwYW4+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjaGF0X2JveF9jb250Ij4KICAgICAgICAgICAgICAgICAgPHA+SSBoYXZlIGJlZW4gaW52ZXN0aW5nIHdpdGggWUVTIFNFQ1VSSVRJRVMgZnJvbSBsYXN0IHNpeCBtb250aHMgYW5kIHRoZSBleHBlcmllbmNlcyBoYXMgYmVlbiBwaGVub21lbmFsLiBUaGUgZGVhbGluZyB0ZWFtIGlzIHByb2FjdGl2ZSBpbiBhc3Npc3RpbmcgbWUgd2l0aCBteSB0cmFkaW5nIGFuZCBpbnZlc3RtZW50cy4gVGhlIHRyYWRpbmcgcGxhdGZvcm0gaXMgYWxzbyB2ZXJ5IGdvb2QgYW5kIGVhc3kgdG8gdXNlLiBZb3UgZG9u4oCZdCBoYXZlIHRvIGdvIGFueXdoZXJlIGZvciB5b3VyIGludmVzdG1lbnRzLiA8L3A+CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFycm93LWRvd24iPjwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRlc3RpbW9uaWFsc19pbWdfY29udCI+CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRlc3RpbW9uaWFsc19jb250Ij5CaGF2aWthIE5hZ3BhbDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDxkaXYgY2xhc3M9Iml0ZW0gYWN0aXZlIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0ZXN0aW1vbmlhbHNfY2hhdF9ib3giPiA8c3BhbiBjbGFzcz0ibGVmdF9xdW90ZSI+Ijwvc3Bhbj48c3BhbiBjbGFzcz0icmlnaHRfcXVvdGUiPiI8L3NwYW4+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjaGF0X2JveF9jb250Ij4KICAgICAgICAgICAgICAgICAgPHA+VGhlIHNlcnZpY2VzIGdpdmVuIGJ5IFlFUyBTRUNVUklUSUVTIHRlYW0gYXJlIHJlYWxseSBleGNlbGxlbnQuIFRoZXkgYWx3YXlzIGF0dGVuZCB0aGUgY2FsbHMgdmVyeSBwcm9tcHRseSwgd2hpY2ggcmVhbGx5IG1hdHRlcnMgYSBsb3QuIEV2ZW4gdGhlIHJlc2VhcmNoIHJlY29tbWVuZGF0aW9ucyBnaXZlbiBmcm9tIHRpbWUgdG8gdGltZSBhcmUgcXVpdGUgdXNlZnVsLiA8L3A+CiAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhcnJvdy1kb3duIj48L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0ZXN0aW1vbmlhbHNfaW1nX2NvbnQiPgogICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRlc3RpbW9uaWFsc19jb250Ij5SYXZpbmRlciBLdW1hciBLYWtrYXI8L2Rpdj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9Iml0ZW0iPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRlc3RpbW9uaWFsc19jaGF0X2JveCI+IDxzcGFuIGNsYXNzPSJsZWZ0X3F1b3RlIj4iPC9zcGFuPjxzcGFuIGNsYXNzPSJyaWdodF9xdW90ZSI+Ijwvc3Bhbj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNoYXRfYm94X2NvbnQiPgogICAgICAgICAgICAgICAgICA8cD5JIGhhdmUgbXkgdHJhZGluZyBhY2NvdW50IGZvciB0aGUgbGFzdCAyIHllYXJzLCBidXQgYWN0aXZlbHkgc3RhcnRlZCBpbnZlc3Rpbmcgbm93LiBJIHdvdWxkIGxpa2UgdG8gdGhhbmsgWUVTIFNFQ1VSSVRJRVMgdGVhbSBmb3IgdGhlIGluc2lnaHRzIGFuZCBzdWdnZXN0aW9ucywgd2hpY2ggaGF2ZSBnaXZlbiBtZSB0aGUgY29uZmlkZW5jZSB0byBpbnZlc3QgaW4gdGhlIGVxdWl0eSBtYXJrZXQuIEkgaGF2ZSB0aGUgdHJ1c3QgYW5kIGNvbmZpZGVuY2UgdGhhdCBteSBpbnZlc3RtZW50cyBhcmUgYmVpbmcgbW9uaXRvcmVkIGNvbnRpbnVvdXNseSwgYW5kIHdpbGwgeWllbGQgdGhlIHJldHVybnMgdGhhdCBJIGFtIGxvb2tpbmcgZm9yIHVuZGVyIHlvdXIgYWJsZSBndWlkYW5jZS4gVGhhbmtz4oCdPC9wPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYXJyb3ctZG93biI+PC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idGVzdGltb25pYWxzX2ltZ19jb250Ij4KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idGVzdGltb25pYWxzX2NvbnQiPlNpZGRoYXJ0aCBLYWxyYTwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgCiAgICAgICAgICA8IS0tIExlZnQgYW5kIHJpZ2h0IGNvbnRyb2xzIC0tPiAKICAgICAgICAgIDxhIGNsYXNzPSJsZWZ0IGNhcm91c2VsLWNvbnRyb2wiIGhyZWY9IiNteUNhcm91c2VsIiBkYXRhLXNsaWRlPSJwcmV2Ij4gPHNwYW4gY2xhc3M9ImdseXBoaWNvbiBnbHlwaGljb24tY2hldnJvbi1sZWZ0Ij48L3NwYW4+IDxzcGFuIGNsYXNzPSJzci1vbmx5Ij5QcmV2aW91czwvc3Bhbj4gPC9hPiA8YSBjbGFzcz0icmlnaHQgY2Fyb3VzZWwtY29udHJvbCIgaHJlZj0iI215Q2Fyb3VzZWwiIGRhdGEtc2xpZGU9Im5leHQiPiA8c3BhbiBjbGFzcz0iZ2x5cGhpY29uIGdseXBoaWNvbi1jaGV2cm9uLXJpZ2h0Ij48L3NwYW4+IDxzcGFuIGNsYXNzPSJzci1vbmx5Ij5OZXh0PC9zcGFuPiA8L2E+IDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbj4KICAgIDwhLS0gVGVzdGltb25pYWwgRW5kIC0tPgoKCgoKCgo=
+
+
+
+
+-----------------------
+
+
+
+
+            <section class="moneywork_sec">
+                <h4 style="margin: 0px; padding: 10px 25px; color: #404040; font-size: 14px; font-weight: 700"></h4>
+
+
+
+                <h1 class="moneywork_hd" style="margin: 0px; padding: 25px 0px; text-align: center; color: #404040; font-size: 36px; font-weight: 300"><span style="font-size: 36px">Make your money work for you</span></h1>
+                <div class="money_work_sec" style="background: url(images/home-llustration.png) no-repeat bottom; height: 453px">
+                    <div class="money_work_inner" style="margin: 8px auto; width: 80%">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6" style="font-size: 14px">
+                                <div class="money_work_hd" style="height: 65px; text-align: center; color: #404040; font-size: 36px; font-weight: 300"><span style="vertical-align: middle">3</span><span class="font24" style="font-weight: bold; vertical-align: middle; font-size: 24px">in</span><span style="vertical-align: middle">1</span></div>
+                                <div class="money_work_cont" style="text-align: center; color: #404040; font-size: 14px; font-weight: bold">
+                                    Account for Seamless<br>
+                                    Investment Experience
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6" style="font-size: 14px">
+                                <div class="money_work_hd" style="height: 65px; text-align: center; color: #404040; font-size: 36px; font-weight: 300"><span style="vertical-align: middle">5.5</span><span class="font24" style="font-weight: bold; vertical-align: middle; font-size: 24px">%</span></div>
+                                <div class="money_work_cont" style="text-align: center; color: #404040; font-size: 14px; font-weight: bold">
+                                    Interest  on<br>
+                                    Savings balance*
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="money_work_hd" style="height: 65px; text-align: center; color: #404040"><span class="font24" style="font-size: 36px; font-weight: 300; vertical-align: middle">70</span><span class="font24" style="font-weight: bold; vertical-align: middle; font-size: 24px">%<span style="font-size: 12px"><sup>#</sup></span></span></div>
+                                <div class="money_work_cont" style="text-align: center; color: #404040; font-size: 14px; font-weight: bold">
+                                    Accurate
+                                    <br>
+                                    Market Prediction
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6" style="font-size: 14px">
+                                <div>
+                                    <div class="money_work_hd " style="height: 65px; text-align: center; color: #404040; font-size: 36px; font-weight: 300">
+                                        <img alt="" height="50" class="img-responsive" style="margin: 0px auto; text-align: center; padding-top: 10px" src="images/health_score.png"></div>
+                                    <div class="money_work_cont" style="text-align: center; color: #404040; font-size: 14px; font-weight: bold">
+                                        Stock&nbsp;<br>
+                                        Health Score**
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open_acc" style="margin: 0px auto; text-align: center; padding-top: 40px; font-size: 14px"><a href="/open_account?utm_source=header-navigation&amp;utm_medium=website&amp;utm_campaign=open-account" class="btn btn-default ac_btn " style="padding: 10px 30px; border: 1px solid #006aab; color: #ffffff; font-size: 20px; background-image: linear-gradient(45deg, #0064ac, #008aa8); background-color: #0081a8">Open Account</a>&nbsp;</div>
+                        <span style="top: 2%; font-size: 14px; opacity: 0">
+                            <img alt="" width="42" class="parchute" style="top: 2%; opacity: 0" src="/images/default-source/default-album/images/parachute.png?sfvrsn=7b11a402_2"></span><span style="top: 2%; right: 2%; font-size: 14px; opacity: 0"><img alt="" width="42" class="parchute2" style="top: 2%; right: 2%; opacity: 0" src="/images/default-source/default-album/images/parachute.png?sfvrsn=7b11a402_2"></span>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="booking_cab_sec" style="padding: 60px 40px; font-size: 14px; background-image: linear-gradient(292deg, #008aa8, #0062a8)">
+                <h2 class="heading-white" style="margin: 0px; text-align: center; color: #ffffff; padding-bottom: 90px; font-size: 36px; font-weight: 300">We make investing as easy as booking a cab</h2>
+                <div class="book_cab_video_sec">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul style="margin: 0px; padding: 0px">
+                                <li style="background: url(images/yes_tick_18x25_px.png) no-repeat; list-style: none; color: #ffffff; line-height: 30px; padding-bottom: 40px; padding-left: 30px; font-size: 24px">Stock Health Score</li>
+                                <li style="background: url(images/yes_tick_18x25_px.png) no-repeat; list-style: none; color: #ffffff; line-height: 30px; padding-bottom: 40px; padding-left: 30px; font-size: 24px">Advance Tools &amp; Charts</li>
+                                <li style="background: url(images/yes_tick_18x25_px.png) no-repeat; list-style: none; color: #ffffff; line-height: 30px; padding-bottom: 40px; padding-left: 30px; font-size: 24px">Live Portfolio Tracker</li>
+                                <li style="background: url(images/yes_tick_18x25_px.png) no-repeat; list-style: none; color: #ffffff; line-height: 30px; padding-bottom: 40px; padding-left: 30px; font-size: 24px">Research Backed Solutions&#xFEFF;</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="flip-wrap" style="width: 100%; height: 260px; display: table">
+                                <div id="coverflow" style="margin: 0px auto; width: 90%; text-align: center; vertical-align: middle; display: table-cell;" class="flipster flipster--transform flipster--flat flipster--click flipster--active" tabindex="0">
+                                    <ul class="flip-items flipster__container" style="height: 227px; transform: translateX(-132px);">
+                                        <li id="1" style="text-align: left; margin-right: -231.6px; z-index: 3;" data-toggle="modal" data-target="#investorVideo" data-flip-title="Red" class="flipster__item  flipster__item--current">
+                                            <div class="flipster__item__content">
+                                                &nbsp;<img title="health_indicator_2" style="float: left" alt="health_indicator_2" src="images/health_indicator_2.jpg" data-displaymode="Original" />&nbsp;
+    <div class="traders" style="top: -90px; color: #000000; z-index: 10000">&nbsp;</div>
+                                            </div>
+                                        </li>
+                                        <li id="2" style="margin-right: -10.8px; z-index: 1;" data-toggle="modal" data-target="#traderVideo" data-flip-title="Razzmatazz" data-flip-category="Purples" class="flipster__item  flipster__item--future flipster__item--future-1">
+                                            <div class="flipster__item__content">
+                                                <div class="traders" style="top: -90px; color: #000000; z-index: 10000">&nbsp;</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="faster_smarter_sec" style="padding: 60px; text-align: center">
+                <h2 class="heading-grey" style="margin: 0px; color: #808080; padding-bottom: 20px; font-size: 36px; font-weight: 300">We also make it faster and smarter </h2>
+                <div class="health_score_cont" style="color: #404040; padding-bottom: 80px">The Stock Health Score** helps you make investment decisions quickly and confidently</div>
+                <div class="health_score_sec" style="margin: 0px auto; text-align: center; font-size: 14px">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="health_score_outer_sec" style="padding-bottom: 60px">
+                                <div class="health_score" style="background: url(images/health_score01.png) no-repeat; margin: 0px auto; width: 130px; height: 68px; text-align: center; font-size: 24px"><span class="score_count" style="top: 30px; text-align: center; vertical-align: middle; color: #2ebf44">40</span></div>
+                                <div class="health_score_sub_cont" style="text-align: center; color: #0060ab; padding-top: 5px; font-size: 18px">&nbsp; HDFC Bank</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="health_score_outer_sec" style="padding-bottom: 60px">
+                                <div class="health_score" style="background: url(images/health_score01.png) no-repeat; margin: 0px auto; width: 130px; height: 68px; text-align: center; font-size: 24px"><span class="score_count" style="top: 30px; text-align: center; vertical-align: middle; color: #2ebf44">41</span></div>
+                                <div class="health_score_sub_cont" style="text-align: center; color: #0060ab; padding-top: 5px; font-size: 18px">&nbsp;ITC</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="health_score_outer_sec" style="padding-bottom: 60px">
+                                <div class="health_score" style="background: url(images/health_score01.png) no-repeat; margin: 0px auto; width: 130px; height: 68px; text-align: center; font-size: 24px"><span class="score_count" style="top: 30px; text-align: center; vertical-align: middle; color: #2ebf44">47</span></div>
+                                <div class="health_score_sub_cont" style="text-align: center; color: #0060ab; padding-top: 5px; font-size: 18px">RIL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="health_score_outer_sec" style="padding-bottom: 60px">
+                                <div class="health_score" style="background: url(images/health_score01.png) no-repeat; margin: 0px auto; width: 130px; height: 68px; text-align: center; font-size: 24px"><span class="score_count" style="top: 30px; text-align: center; vertical-align: middle; color: #2ebf44">42</span></div>
+                                <div class="health_score_sub_cont" style="text-align: center; color: #0060ab; padding-top: 5px; font-size: 18px">TCS</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="health_score_outer_sec" style="padding-bottom: 60px">
+                                <div class="health_score" style="background: url(images/health_score01.png) no-repeat; margin: 0px auto; width: 130px; height: 68px; text-align: center; font-size: 24px"><span class="score_count" style="top: 30px; text-align: center; vertical-align: middle; color: #2ebf44">57</span></div>
+                                <div class="health_score_sub_cont" style="text-align: center; color: #0060ab; padding-top: 5px; font-size: 18px">Procter &amp; Gamble Health Ltd</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="health_score_outer_sec" style="padding-bottom: 60px">
+                                <div class="health_score" style="background: url(images/health_score01.png) no-repeat; margin: 0px auto; width: 130px; height: 68px; text-align: center; font-size: 24px"><span class="score_count" style="top: 30px; text-align: center; vertical-align: middle; color: #2ebf44">50</span></div>
+                                <div class="health_score_sub_cont" style="text-align: center; color: #0060ab; padding-top: 5px; font-size: 18px">Asian Paints<span style="font-size: 14px; color: #000000">&#xFEFF;</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Testimonial -->
+            <section class="booking_cab_sec">
+                <h2 class="heading-white">Here’s what people are saying about us…</h2>
+                <div class="testimonials_carousel_sec">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                            <div class="item">
+                                <div class="testimonials_chat_box">
+                                    <span class="left_quote">"</span><span class="right_quote">"</span>
+                                    <div class="chat_box_cont">
+                                        <p>I have been investing with YES SECURITIES from last six months and the experiences has been phenomenal. The dealing team is proactive in assisting me with my trading and investments. The trading platform is also very good and easy to use. You don’t have to go anywhere for your investments. </p>
+
+                                    </div>
+                                </div>
+                                <div class="arrow-down"></div>
+                                <div class="testimonials_img_cont">
+
+                                    <div class="testimonials_cont">Bhavika Nagpal</div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="testimonials_chat_box">
+                                    <span class="left_quote">"</span><span class="right_quote">"</span>
+                                    <div class="chat_box_cont">
+                                        <p>The services given by YES SECURITIES team are really excellent. They always attend the calls very promptly, which really matters a lot. Even the research recommendations given from time to time are quite useful. </p>
+
+                                    </div>
+                                </div>
+                                <div class="arrow-down"></div>
+                                <div class="testimonials_img_cont">
+
+                                    <div class="testimonials_cont">Ravinder Kumar Kakkar</div>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class="testimonials_chat_box">
+                                    <span class="left_quote">"</span><span class="right_quote">"</span>
+                                    <div class="chat_box_cont">
+                                        <p>I have my trading account for the last 2 years, but actively started investing now. I would like to thank YES SECURITIES team for the insights and suggestions, which have given me the confidence to invest in the equity market. I have the trust and confidence that my investments are being monitored continuously, and will yield the returns that I am looking for under your able guidance. Thanks”</p>
+                                    </div>
+                                </div>
+                                <div class="arrow-down"></div>
+                                <div class="testimonials_img_cont">
+
+                                    <div class="testimonials_cont">Siddharth Kalra</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span> </a><a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span> </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial End -->

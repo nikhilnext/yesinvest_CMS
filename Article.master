@@ -1,0 +1,253 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Article.master.cs" Inherits="Article" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Yes Invest</title>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+                <!--Header section start--><!-- #BeginLibraryItem "/Library/header.lbi" -->
+<div class="markt">
+
+
+    <div class="top_header_bg" style="height: 34px">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 mob_pd0 mob_resp_width">
+<div class="header_sec">
+<ul class="nav navbar-nav menu">
+    <li class="sel"><a href="https://yesinvest.in/">Wealth Broking</a> </li>
+    <li><a href="https://ysil.in/">Investment &amp; Merchant Banking</a> </li>
+</ul>
+<ul class="nav navbar-nav navbar-right hidden-xs">
+    
+    <li><a href="https://partners.yesinvest.in/login.aspx">Partner Login</a></li>
+    <li><a href="/contact">Contact us</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  <header class="ts0 fixed-header">
+    <div class="container">
+<div class="row">
+<div class="col-sm-3 col-xs-7"> <a href="home.aspx"><img style="padding-top: 20px;" alt="" class="img-responsive logo" src="images/logo_yesinvest.png"/></a> </div>
+<div class="markt sensx hidden-xs">
+<div class="col-sm-6">
+<div class="col-xs-4">
+<span class="s0" id="sensex">SENSEX</span> <br>
+<span class="n0" id="ltp">52763.32</span> <br>
+<span class="n1" id="closingprice" style="margin-left: 0px !important; color: red;">-376.74 -0.71%</span>
+</div>
+<div class="col-xs-4">
+<span class="s0" id="nifty">NIFTY 50</span> <br>
+<span class="n0" id="n_ltp">15823.5</span><br>
+<span class="n1" id="n_closingprice" style="margin-left: 0px !important; color: red;">-99.9 -0.63%</span>
+</div>
+<div class="col-xs-4">
+<span class="s0" id="usd_inr">USDINR</span> <br>
+<span class="n0" id="usd_ltp">74.795</span><br>
+<span class="n1" id="usd_closingprice" style="margin-left: 0px !important; color: rgb(46, 191, 68);">0.19 0.25%</span>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+    <div class="header-bottom gradient">
+      <div class="container">
+        <div class="row">
+          <nav class="col-sm-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav menu">
+                <li><a href="home.aspx">Why YES SECURITIES</a> </li>
+                <li><a href="what_we_offer.aspx">What We Offer</a> </li>
+                <li><a href="research.aspx">Research</a> </li>
+                <li><a href="knowledge_center.aspx">Knowledge Center</a> </li>
+                <li><a href="overview.aspx">Global Investment</a> </li>
+				
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+</div><!-- #EndLibraryItem --><!--Header section end-->
+ 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+
+     <!--Footer section start--><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  
+  <div class="" style="margin-top: -30px;"> 
+   <div class="maincontainer" style="padding-top: 0px;">       
+<div class="overlay"></div>
+<div class="footer_sec container_sec">
+<div class="row">
+<div class="col-sm-12">
+<div class="footer_links">
+<ul class="regulatory_links form-group" style="padding-left: 0px; margin-bottom: 0px">
+    <li><strong><a href="/regulatory_disclosures">Regulatory Disclosure</a></strong></li>
+    <li> | </li>
+    <a href="/privacy_policy_disclaimers"></a><a href="51f9641a-6cea-4458-93e2-62f5c678eaea"></a>
+    <li><a href="51f9641a-6cea-4458-93e2-62f5c678eaea"></a><strong><a href="/privacy_policy_disclaimers">Privacy Policy &amp; Disclaimers</a></strong></li>
+    <li> | </li>
+    <li><strong><a href="/standard_documents_policies">Standard Documents &amp; Policies</a></strong></li>
+    <li> | </li>
+    <li><strong><a href="mailto:yslhcm@ysil.in">Careers</a></strong></li>
+    <li> | </li>
+    <li><strong><a href="mailto:igc@ysil.in">Grievances</a></strong></li>
+    <li> | </li>
+    <li><strong><a href="/docs/default-source/default-document-library/whistle-blower-policy_dec20.pdf?sfvrsn=691b9c7c_0" title="Whistle Blower Policy" target="_blank">Whistle Blower Policy</a></strong></li>
+    <li> | </li>
+    <li><strong><a href="/sitemap">Sitemap</a></strong></li>
+    <li> | </li>
+    <li><strong><a href="/document_checklist">Document Checklist</a></strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+<div class="reg_office_add form-group" style="margin-bottom: 0px">
+<p><strong>YES Securities (India) Limited (YSL)</strong> - Registered Address: Unit No. 602 A, 6th Floor, Tower 1 &amp; 2, One International Center, Senapati Bapat Marg, Elphinstone Road, Mumbai – 400013, Maharashtra, India. | Email ID: <a href="mailto:customer.service@ysil.in">customer.service@ysil.in</a>&nbsp;| Website: <a href="http://yesinvest.in/YES/index.jsp" target="_blank">www.yesinvest.in</a>. Registration Nos.: CIN: U74992MH2013PLC240971 | SEBI Single Registration No.: NSE, BSE, MCX &amp; NCDEX: INZ000185632 | Member Code: BSE - 6538, NSE - 14914, MCX - 56355 &amp; NCDEX - 1289 | MERCHANT BANKER: INM000012227 | RESEARCH ANALYST: INH000002376 | INVESTMENT ADVISER: INA000007331 | Sponsor and Investment Manager to YSL Alternates Alpha Plus Fund (CAT III AIF) SEBI Registration No.: IN/AIF3/20-21/0818 | AMFI ARN Code – 94338 | Details of Compliance Officer: Name: Vaibhav Purohit, Email id: <a href="mailto:compliance@ysil.in">compliance@ysil.in</a>, Contact No: +91-22-3347 9208. Disclaimer: Investment in securities market are subject to market risks, read all the related documents carefully before investing. **Stock Health Score: The stock health scores shown in the home page is for representational purpose only and should not be read as recommendations from YSL. <sup>#</sup>Such representations are not indicative of future results.</p>
+</div>
+<div class="reg_office_add form-group" style="margin-bottom: 0px">
+<p><strong>Important information</strong> - If you receive a communication from people or organizations falsely claiming to recruit on behalf of YSL and received an invitation for an interview and then asking money to be send to a bank account please notify to us immediately. Such people or organizations, have unauthorized use of YSL’s brand in their communications. Please know that YSL has not authorized any such correspondence and that YSL has no agreement with these parties. YSL will never ask for any kind of financial payment in connection to or exchange for a job interview. Please know that any requests of such nature are fraudulent and should not be pursued. YSL advises candidates to remain alert of any suspicion communication. In case of doubt, please report it to<a href="mailto:%20YSLHCM@ysil.in"> YSLHCM@YSIL.IN</a> in case of fake/fraudulent employment offer.&nbsp;<br>
+<br>
+Filing of complaints on&nbsp;<a href="https://www.scores.gov.in/" target="_blank">SCORES</a>&nbsp;– Easy &amp; quick a. Register on SCORES portal b. Mandatory details for filing complaints on SCORES: I. Name, PAN, Address, Mobile Number, Email ID c. Benefits: i. Effective communication ii. Speedy redressal of the grievances.<br>
+<br>
+<strong>Note</strong>: First time login/Forgot/Reset/Change password is usually done via OTP process over Email &amp; SMS. However, for NRI/GIB customers, the OTP over SMS service is only available if the customer has provided their Indian mobile number in the contact detail that too subject to network availability or activation of international roaming facility on the provided number. Currently facility of OTP on International number is not provided by YSL. There is no change in the OTP process over registered email id.<br>
+<br>
+<strong><span style="text-decoration: underline; font-size: 14px">"Attention Investors</span><br>
+</strong>1. Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020<br>
+2. Update your mobile number &amp; email id with your stock broker/depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge.<br>
+3. Pay 20% upfront margin of the transaction value to trade in cash market segment.<br>
+4. Investors may please refer to the Exchanges' Frequently Asked Questions (FAQs) issue vide circular reference NSE/INSP/45191 dated July 31, 2020 and NSE/INSP/45534 dated August 31, 2020 and BSE Notice no. 20200731-7 dated July 31, 2020 and 20200831-45 dated August 31, 2020 and other guidelines issued from time to time in this regard<br>
+5. Check your Securities/MF/Bonds in the consolidated account statement issued by NSDL/CDSL every month.<br>
+<strong><span style="font-size: 14px; text-decoration: underline">...........Issued in the interest of Investors"</span></strong><br>
+<br>
+*YES BANK Disclaimer: W.e.f. Dec 8, 2020, interest rate of 5.5% p.a. is applicable on balances of INR 10 lakh up to INR 100 Crore, 4.75% p.a. balances of INR 1 lakh up to INR 10 lakh and 4% p.a. on balances up to INR 1 lakh. ^^For amounts of INR 100 Crore and above, please contact the branch or your designated Relationship Manager. Rates are subject to change at the sole discretion of YES BANK. Terms and Conditions apply.<br>
+<span style="font-size: 14px"><br>
+</span></p>
+</div>
+<div class="bottommark">
+<div class="col-md-2" style="margin-right: -54px">
+<p class="AtentionMarquee" style="margin-left: -16px">Attention Investors :</p>
+</div>
+<div class="col-md-10" id="marq">
+<marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3"><p>Prevent unauthorised transactions in your account. Update your mobile numbers/email IDs with us. Receive information of your transactions directly from Stock Exchange on your mobile/email at the end of the day Issued in the interest of Investors - No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorise your bank to make payment in case of allotment. No worries for refund as the money remains in investors account</p></marquee></div>
+</div>
+<div class="row form-group" style="margin-bottom: 0px; margin-left: -35px">
+<div class="col-sm-6">
+<ul class="regulatory_links" style=" padding-left: 20px; margin-bottom: 18px;">
+    <li><span class="footer_gray">Useful Links: &nbsp;</span> <a href="https://nseindia.com/" target="_blank">NSE</a></li>
+    <li> | </li>
+    <li><a href="https://www.bseindia.com/" target="_blank">BSE </a></li>
+    <li> | </li>
+    <li><a href="https://nsdl.co.in/" target="_blank">NSDL</a></li>
+    <li> | </li>
+    <li><a href="https://www.cdslindia.com/" target="_blank">CDSL</a></li>
+    <li> | </li>
+    <li><a href="https://www.sebi.gov.in/" target="_blank">SEBI</a></li>
+    <li> | </li>
+    <li><a href="https://www.scores.gov.in/" target="_blank">SEBI SCORE</a></li>
+</ul>
+</div>
+<div class="col-sm-6">
+<ul class="social-media">
+    <li class="pdl20"><span class="footer_gray">Social Media Handles:</span>
+    <a href="https://www.facebook.com/YES-Securities-304629757145299/" target="_blank"><img alt="facebook" src="/images/default-source/default-album/images/facebook.jpg?sfvrsn=4eb1fea5_0"></a></li>
+    <li class="hidden-xs"> | </li>
+    <li><a href="https://twitter.com/YesSecurities" target="_blank"><img alt="Twitter" src="/images/default-source/default-album/images/twitter.jpg?sfvrsn=d29d693_0"></a></li>
+    <li class="hidden-xs"> | </li>
+    <li><a href="https://www.linkedin.com/company/14648606/admin/" target="_blank"><img alt="LinkedIn" src="/images/default-source/default-album/images/linkedin.jpg?sfvrsn=16c2ea2b_0"></a></li>
+    <li class="hidden-xs"> | </li>
+    <li><a href="https://www.youtube.com/channel/UCPvbY1DDZsFdDl_W7odTAJQ" target="_blank"><img alt="YouTube" src="/images/default-source/default-album/images/youtube.jpg?sfvrsn=644fa6da_0"></a></li>
+    <li class="hidden-xs"> | </li>
+    <li><a href="https://www.instagram.com/yessecurities/" target="_blank"><img alt="Instagram" src="/images/default-source/default-album/insta.png?sfvrsn=b5652cf9_0"></a></li>
+</ul>
+</div>
+</div>
+<ul class="copyright" style="margin-bottom: 0px">
+    <li>Copyright © 2019 YES Securities (India) Limited</li>
+    <li>&nbsp; | &nbsp;</li>
+    <li>YES SECURITIES is a wholly owned subsidiary of YES BANK</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+    
+
+
+
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/IBMB.js"></script>
+<script src="js/publish.js"></script>
+
+
+    <script src="all/summernote.js"></script>
+<script src="all/summernote.min.js"></script>
+<script src="all/editor_summernote.js"></script>
+
+    <script>
+ $(document).ready(function(){
+
+ $('.summernote').summernote();
+
+	if ($(window).width() < 769) {
+		$('.navbar-toggle').click( function(event){
+			event.stopPropagation();
+			$(".navbar-collapse").toggleClass("in");
+			$(".overlay").toggleClass("block");
+			$("body").toggleClass("hide-overflow");
+		});
+
+		$(document).click( function(){
+			$(".navbar-collapse").removeClass("in");
+			$(".overlay").removeClass("block");
+			$("body").removeClass("hide-overflow");
+		});
+	}
+    })
+    </script>
+  
+   
+</body>
+</html>

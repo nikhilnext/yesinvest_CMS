@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Recommendations</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Investor-Short-term" transform="translate(-187.000000, -1098.000000)" fill="#000">
+            <g id="Group-10" transform="translate(187.000000, 1098.000000)">
+                <g id="Recommendations">
+                    <g id="Shape">
+                        <path d="M4,19 L4.33333333,19 L14.5333333,19 C15.6666667,19 16.6333333,18.24 16.8333333,17.195 L18,11.1466667 C18,11.115 18,11.115 18,11.0833333 L18,10.45 C18,9.215 16.9666667,8.23333333 15.6666667,8.23333333 L9.33333333,8.23333333 L9.33333333,2.21666667 C9.33333333,0.981666667 8.3,0 7,0 L7,0 C6.86666667,0 6.73333333,0.095 6.66666667,0.221666667 L4,8.86666667 L4,19 Z" fill-rule="nonzero"></path>
+                        <path d="M3,9 L0.3,9 C0.12,9 0,9.125 0,9.3125 L0,18.6875 C0,18.875 0.12,19 0.3,19 L3,19 L3,9 Z" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

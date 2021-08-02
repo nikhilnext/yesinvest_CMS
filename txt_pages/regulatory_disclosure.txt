@@ -1,0 +1,83 @@
+var gethtml = $("#regulatory_disclosures_page").html(); 
+//console.log(gethtml);
+
+var base64convert = window.btoa(unescape(encodeURIComponent(gethtml)))
+console.log(base64convert)
+
+
+
+
+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJiYW5uZXJfY29udGFpbmVyIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJyZWFkY3J1bWJfc2VjIj48c3BhbiBjbGFzcz0ibWFpbl9tZW51Ij48YSBocmVmPSJob21lLmFzcHgiPkhvbWU8L2E+ICZndDsgPHNwYW4gY2xhc3M9InN1Yl9tZW51Ij5SZWd1bGF0b3J5IERpc2Nsb3N1cmVzPC9zcGFuPjwvc3Bhbj4gPC9kaXY+CgogICAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJzZWN1cml0aWVzX3NlYyB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgICAgICA8aDEgY2xhc3M9IiI+WUVTIFNFQ1VSSVRJRVM8L2gxPgoKICAgICAgICAgICAgPC9kaXY+CgoKICAgICAgICAgICAgPGRpdiBjbGFzcz0ic2VjdXJpdGllc19zZWMiPgoKCiAgICAgICAgICAgICAgICA8dGFibGUgaWQ9IlJlZ3VsYXRvcnlfVGFibGUiIHN0eWxlPSJtYXJnaW4tbGVmdDogMjBweDsiPgogICAgICAgICAgICAgICAgICAgIDx0Ym9keT4KICAgICAgICAgICAgICAgICAgICAgICAgPHRyIGNsYXNzPSJyZXRhaWxfdGFibGVfY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0aCBjb2xzcGFuPSI1IiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBwYWRkaW5nOiA4cHgiPk51bWJlciBvZiBDb21wbGFpbnRzIzwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvdHI+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzcz0icmV0YWlsX3RhYmxlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0aCBzdHlsZT0icGFkZGluZzogOHB4Ij5BdCB0aGUgYmVnaW5uaW5nIG9mIHRoZSBtb250aDwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGg+UmVjZWl2ZWQgZHVyaW5nIHRoZSBtb250aDwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGg+UmVzb2x2ZWQgZHVyaW5nIHRoZSBtb250aDwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGg+UGVuZGluZyBhdCB0aGUgZW5kIG9mIHRoZSBtb250aDwvdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGg+UmVzYW9ucyBmb3IgUGVuZGVuY3k8L3RoPgogICAgICAgICAgICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgICAgICAgICA8dHIgY2xhc3M9InJldGFpbF90YWJsZV9jZW50ZXIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGlkPSJiZWdpbiI+MDwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgaWQ9ImR1cmluZyI+MDwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGQgaWQ9InJlc29sdmUiPjA8L3RkPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRkIGlkPSJwZW5kaW5nIj4wPC90ZD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBpZD0icmVhc29uIj5ubzwvdGQ+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvdHI+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0ciBjbGFzcz0icmV0YWlsX3RhYmxlX2NlbnRlciI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dGggY29sc3Bhbj0iNSIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsgcGFkZGluZzogOHB4Ij4jRm9yIGludmVzdG1lbnQgYWR2aXNvcnkgc2VydmljZXMgPC90aD4KICAgICAgICAgICAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgICAgICAgICA8L3Rib2R5PgogICAgICAgICAgICAgICAgPC90YWJsZT4KICAgICAgICAgICAgICAgIDxicj48YnI+CgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvZG9jcy9kZWZhdWx0LXNvdXJjZS9maWxlcy9nZW5lcmFsdGVybXMucGRmP3NmdnJzbj03YzI4OTRhY18yIiB0aXRsZT0iVGVybXMgQW5kIENvbmRpdGlvbnMgb2YgQXBwb2ludG1lbnQgb2YgSW5kZXBlbmRlbnQgRGlyZWN0b3JzIiB0YXJnZXQ9Il9ibGFuayI+VGVybXMgQW5kIENvbmRpdGlvbnMgb2YgQXBwb2ludG1lbnQgb2YgSW5kZXBlbmRlbnQgRGlyZWN0b3JzPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IiMiPkFyYml0cmF0aW9uIE1lY2hhbmlzbSBpbiBTdG9jayBFeGNoYW5nZXM8L2E+CiAgICAgICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvZG9jcy9kZWZhdWx0LXNvdXJjZS9maWxlcy9jaXJjdWxhcjExLnBkZj9zZnZyc249ZGY0M2JiMjRfMiIgdGl0bGU9IkNpcmN1bGFyIE5vIENJUi9NUkQvRFNBLzI0LzIwMTAgQXVndXN0IDExLCAyMDEwIiB0YXJnZXQ9Il9ibGFuayI+Q2lyY3VsYXIgTm8gQ0lSL01SRC9EU0EvMjQvMjAxMCBBdWd1c3QgMTEsIDIwMTA8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvZG9jcy9kZWZhdWx0LXNvdXJjZS9maWxlcy9jaXJjdWxhcjMxLnBkZj9zZnZyc249OWM3MTM3OGVfMiIgdGl0bGU9IkNpcmN1bGFyIE5vIENJUi9NUkQvRFNBLzI5LzIwMTAgQXVndXN0IDMxLCAyMDEwIiB0YXJnZXQ9Il9ibGFuayI+Q2lyY3VsYXIgTm8gQ0lSL01SRC9EU0EvMjkvMjAxMCBBdWd1c3QgMzEsIDIwMTA8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvZG9jcy9kZWZhdWx0LXNvdXJjZS9maWxlcy9jaXJjdWxhcjkucGRmP3NmdnJzbj00ZTcwNTRlMF8yIiB0aXRsZT0iQ2lyY3VsYXIgTm8gQ0lSL01SRC9EU0EvMi8yMDExIEZlYnJ1YXJ5IDA5LCAyMDExIiB0YXJnZXQ9Il9ibGFuayI+Q2lyY3VsYXIgTm8gQ0lSL01SRC9EU0EvMi8yMDExIEZlYnJ1YXJ5IDA5LCAyMDExPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iL2RvY3MvZGVmYXVsdC1zb3VyY2UvZmlsZXMvY3NyLXBvbGljeS5wZGY/c2Z2cnNuPTg1ZjI1OTE5XzAiIHRpdGxlPSJDb3Jwb3JhdGVfU29jaWFsX1Jlc3BvbnNpYmlsaXR5X1BvbGljeSIgdGFyZ2V0PSJfYmxhbmsiPkNvcnBvcmF0ZV9Tb2NpYWxfUmVzcG9uc2liaWxpdHlfUG9saWN5PC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9Ii9kb2NzL2RlZmF1bHQtc291cmNlL2ZpbGVzL25vbWluYXRpb24tYW5kLXJlbXVuZXJhdGlvbi1wb2xpY3kucGRmP3NmdnJzbj0xNDc0Yzg5M18wIiB0aXRsZT0iTm9taW5hdGlvbiBhbmQgUmVtdW5lcmF0aW9uIFBvbGljeSI+Tm9taW5hdGlvbiBhbmQgUmVtdW5lcmF0aW9uIFBvbGljeTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvZG9jcy9kZWZhdWx0LXNvdXJjZS9kZWZhdWx0LWRvY3VtZW50LWxpYnJhcnkvaW1wb3J0YW50LWluZm9ybWF0aW9uLXJlZ2FyZGluZy1oYW5kbGluZy1vZi1jbGllbnQtc2VjdXJpdGllc2JjNTg2MzNlNDZmODQxOWJhMDdhNGM4ODQ4ZGE0NzVkLnBkZj9zZnZyc249Yjg0ODQ5MzZfMCIgdGl0bGU9IkltcG9ydGFudCBJbmZvcm1hdGlvbiBSZWdhcmRpbmcgSGFuZGxpbmcgb2YgQ2xpZW50IFNlY3VyaXRpZXMiPkltcG9ydGFudCBJbmZvcm1hdGlvbiBSZWdhcmRpbmcgSGFuZGxpbmcgb2YgQ2xpZW50IFNlY3VyaXRpZXM8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iL2RvY3MvZGVmYXVsdC1zb3VyY2UvZGVmYXVsdC1kb2N1bWVudC1saWJyYXJ5L3Byb3AtdHJhZGluZ18xMC0wNi10MjAucGRmP3NmdnJzbj1lYmZhZmU1Yl8wIiB0aXRsZT0iSW1wb3J0YW50IFVwZGF0ZSBSZWdhcmRpbmcgUHJvcHJpZXRhcnkgKFBST1ApIFRyYWRpbmciPkltcG9ydGFudCBVcGRhdGUgUmVnYXJkaW5nIFByb3ByaWV0YXJ5IChQUk9QKSBUcmFkaW5nPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9Ii9kb2NzL2RlZmF1bHQtc291cmNlL3JlZ3VsYXRvcnlfZG9jdW1lbnRzL3lzbC1yaXNrLW1hbmFnZW1lbnQtcG9saWN5LnBkZj9zZnZyc249OGYxZDIxMTNfMCIgdGl0bGU9IlJpc2sgTWFuYWdlbWVudCBQb2xpY3kiPlJpc2sgTWFuYWdlbWVudCBQb2xpY3k8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iaHR0cHM6Ly95c2lsLmluL2RvY3MvZGVmYXVsdC1zb3VyY2UvZmlsZXMvbWFuZGF0b3J5LXJlZ3VsYXRvcnktZ3VpZGVsaW5lcy1tYXJnaW4tcGxlZGdlX3JlX3BsZWRnZS5wZGY/c2Z2cnNuPTE4YzI5ZmYwXzIiPjwvYT48YSBocmVmPSJodHRwczovL3lzaWwuaW4vZG9jcy9kZWZhdWx0LXNvdXJjZS9maWxlcy9tYW5kYXRvcnktcmVndWxhdG9yeS1ndWlkZWxpbmVzLW1hcmdpbi1wbGVkZ2VfcmVfcGxlZGdlLnBkZj9zZnZyc249MThjMjlmZjBfMiI+TWFuZGF0b3J5IFJlZ3VsYXRvcnkgR3VpZGVsaW5lcyDigJMgTWFyZ2luIFBsZWRnZSAvIFJlLXBsZWRnZSB3ZWYgU2VwdGVtYmVyIDEgLDIwMjA8L2E+PHNwYW4gY2xhc3M9ImstbWFya2VyIj48L3NwYW4+IDxzcGFuIGNsYXNzPSJrLW1hcmtlciI+PC9zcGFuPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9Ii9kb2NzL2RlZmF1bHQtc291cmNlL3JlZ3VsYXRvcnlfZG9jdW1lbnRzL21hcmdpbi1jb2xsZWN0aW9uYW5kcmVwb3J0aW5nLnBkZj9zZnZyc249NzdlYjlkNzhfMCIgdGl0bGU9IkltcCBJbmZvcm1hdGlvbiBSZWdhcmRpbmcgTWFyZ2luIE9ibGlnYXRpb25zIj5JbXBvcnRhbnQgSW5mb3JtYXRpb24gUmVnYXJkaW5nIE1hcmdpbiBPYmxpZ2F0aW9uczwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvZG9jcy9kZWZhdWx0LXNvdXJjZS9kZWZhdWx0LWRvY3VtZW50LWxpYnJhcnkvc3Rld2FyZHNoaXBfY29kZV9haWYucGRmP3NmdnJzbj1kM2JlMjA4YV8wIiB0aXRsZT0iU3Rld2FyZHNoaXAgQ29kZSI+U3Rld2FyZHNoaXAgQ29kZTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJodHRwczovL2JldGEueWVzaW52ZXN0LmluL2RvY3MvZGVmYXVsdC1zb3VyY2UvcmVndWxhdG9yeV9kb2N1bWVudHMvaWEtaW5mb3JtYXRpb24ucGRmP3NmdnJzbj0yZjU2NmMyZV8yIj5JbnZlc3RtZW50IEFkdmlzZXJzIChJQXMpIEluZm9ybWF0aW9uPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9Imh0dHBzOi8vYmV0YS55ZXNpbnZlc3QuaW4vZG9jcy9kZWZhdWx0LXNvdXJjZS9yZWd1bGF0b3J5X2RvY3VtZW50cy9waHlzaWNhbC1zZXR0bGVtZW50LW9mLXN0b2NrLWRlcml2YXRpdmVzXzI2MDQyMWZmYTQ1ZGM1ODQ5NDQ1NjQ5Y2FlOGM0ZWIzYjliNjI0LnBkZj9zZnZyc249NDY3OTE3OV8yIj5JbXBvcnRhbnQgaW5mb3JtYXRpb24gcmVnYXJkaW5nIHBoeXNpY2FsIHNldHRsZW1lbnQgb2Ygc3RvY2sgZGVyaXZhdGl2ZXM8L2E+PC9saT4KICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8YnI+CgoKICAgICAgICAgICAgPC9kaXY+CgogICAgICAgIA==
+
+
+
+
+
+----------------------------------------------
+
+    <section class="banner_container">
+                <div class="breadcrumb_sec"><span class="main_menu"><a href="home.aspx">Home</a> &gt; <span class="sub_menu">Regulatory Disclosures</span></span> </div>
+
+            </section>
+
+            <div class="securities_sec text-center">
+                <h1 class="">YES SECURITIES</h1>
+
+            </div>
+
+
+            <div class="securities_sec">
+
+
+                <table id="Regulatory_Table" style="margin-left: 20px;">
+                    <tbody>
+                        <tr class="retail_table_center">
+                            <th colspan="5" style="text-align: center; padding: 8px">Number of Complaints#</th>
+                        </tr>
+                        <tr class="retail_table">
+                            <th style="padding: 8px">At the beginning of the month</th>
+                            <th>Received during the month</th>
+                            <th>Resolved during the month</th>
+                            <th>Pending at the end of the month</th>
+                            <th>Resaons for Pendency</th>
+                        </tr>
+                        <tr class="retail_table_center">
+                            <td id="begin"></td>
+                            <td id="during"></td>
+                            <td id="resolve"></td>
+                            <td id="pending"></td>
+                            <td id="reason"></td>
+                        </tr>
+                        <tr class="retail_table_center">
+                            <th colspan="5" style="text-align: center; padding: 8px">#For investment advisory services </th>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <br />
+
+                <ul>
+                    <li><a href="/docs/default-source/files/generalterms.pdf?sfvrsn=7c2894ac_2" title="Terms And Conditions of Appointment of Independent Directors" target="_blank">Terms And Conditions of Appointment of Independent Directors</a></li>
+                    <li><a href="#">Arbitration Mechanism in Stock Exchanges</a>
+                        <ul>
+                            <li><a href="/docs/default-source/files/circular11.pdf?sfvrsn=df43bb24_2" title="Circular No CIR/MRD/DSA/24/2010 August 11, 2010" target="_blank">Circular No CIR/MRD/DSA/24/2010 August 11, 2010</a></li>
+                            <li><a href="/docs/default-source/files/circular31.pdf?sfvrsn=9c71378e_2" title="Circular No CIR/MRD/DSA/29/2010 August 31, 2010" target="_blank">Circular No CIR/MRD/DSA/29/2010 August 31, 2010</a></li>
+                            <li><a href="/docs/default-source/files/circular9.pdf?sfvrsn=4e7054e0_2" title="Circular No CIR/MRD/DSA/2/2011 February 09, 2011" target="_blank">Circular No CIR/MRD/DSA/2/2011 February 09, 2011</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/docs/default-source/files/csr-policy.pdf?sfvrsn=85f25919_0" title="Corporate_Social_Responsibility_Policy" target="_blank">Corporate_Social_Responsibility_Policy</a></li>
+                    <li><a href="/docs/default-source/files/nomination-and-remuneration-policy.pdf?sfvrsn=1474c893_0" title="Nomination and Remuneration Policy">Nomination and Remuneration Policy</a></li>
+                    <li><a href="/docs/default-source/default-document-library/important-information-regarding-handling-of-client-securitiesbc58633e46f8419ba07a4c8848da475d.pdf?sfvrsn=b8484936_0" title="Important Information Regarding Handling of Client Securities">Important Information Regarding Handling of Client Securities</a></li>
+                    <li><a href="/docs/default-source/default-document-library/prop-trading_10-06-t20.pdf?sfvrsn=ebfafe5b_0" title="Important Update Regarding Proprietary (PROP) Trading">Important Update Regarding Proprietary (PROP) Trading</a></li>
+                    <li><a href="/docs/default-source/regulatory_documents/ysl-risk-management-policy.pdf?sfvrsn=8f1d2113_0" title="Risk Management Policy">Risk Management Policy</a></li>
+                    <li><a href="https://ysil.in/docs/default-source/files/mandatory-regulatory-guidelines-margin-pledge_re_pledge.pdf?sfvrsn=18c29ff0_2"></a><a href="https://ysil.in/docs/default-source/files/mandatory-regulatory-guidelines-margin-pledge_re_pledge.pdf?sfvrsn=18c29ff0_2">Mandatory Regulatory Guidelines – Margin Pledge / Re-pledge wef September 1 ,2020</a><span class="k-marker"></span> <span class="k-marker"></span></li>
+                    <li><a href="/docs/default-source/regulatory_documents/margin-collectionandreporting.pdf?sfvrsn=77eb9d78_0" title="Imp Information Regarding Margin Obligations">Important Information Regarding Margin Obligations</a></li>
+                    <li><a href="/docs/default-source/default-document-library/stewardship_code_aif.pdf?sfvrsn=d3be208a_0" title="Stewardship Code">Stewardship Code</a></li>
+                    <li><a href="https://beta.yesinvest.in/docs/default-source/regulatory_documents/ia-information.pdf?sfvrsn=2f566c2e_2">Investment Advisers (IAs) Information</a></li>
+                    <li><a href="https://beta.yesinvest.in/docs/default-source/regulatory_documents/physical-settlement-of-stock-derivatives_260421ffa45dc5849445649cae8c4eb3b9b624.pdf?sfvrsn=4679179_2">Important information regarding physical settlement of stock derivatives</a></li>
+                </ul>
+                <br />
+
+
+            </div>
+

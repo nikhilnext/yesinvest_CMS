@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YesIinvest.in CMS", "D:\YES\yes project\YesIinvest.in CMS\", "{18F49815-BFF3-4A4F-BFC2-69C538B9648C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57249"
+		Debug.AspNetCompiler.PhysicalPath = "D:\YES\yes project\YesIinvest.in CMS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57249\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57249"
+		Release.AspNetCompiler.PhysicalPath = "D:\YES\yes project\YesIinvest.in CMS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57249\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57249"
+		SlnRelativePath = "D:\YES\yes project\YesIinvest.in CMS\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18F49815-BFF3-4A4F-BFC2-69C538B9648C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F49815-BFF3-4A4F-BFC2-69C538B9648C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CMS_Login.master.cs" Inherits="CMS_Login" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>CMS Login</title>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+
+        <!--Header section start--><!-- #BeginLibraryItem "/Library/header.lbi" -->
+<div class="markt">
+
+
+    <div class="top_header_bg" style="height: 34px">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 mob_pd0 mob_resp_width">
+
+</div>
+</div>
+</div>
+</div>
+
+  <header class="ts0 fixed-header">
+    <div class="container">
+<div class="row">
+<div class="col-sm-3 col-xs-7"> <a href="home.aspx"><img style="padding-top: 20px;" alt="" class="img-responsive logo" src="images/logo_yesinvest.png"/></a> </div>
+
+
+
+</div>
+</div>
+    <div class="header-bottom gradient">
+      <div class="container">
+        <div class="row">
+
+                   <nav class="col-sm-12">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navigation">
+
+               
+
+              <ul class="nav navbar-nav menu">
+                <li><a href="CMS_overview.aspx">Overview</a> </li>
+                  <li><a href="CMS_documentation.aspx">Documentation</a> </li>
+                  
+                 
+                 
+     
+				
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
+</div><!-- #EndLibraryItem --><!--Header section end-->
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+</body>
+</html>
