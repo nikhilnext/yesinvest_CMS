@@ -107,8 +107,10 @@ function article_publish()
 	        action = "update";
 	    }
         
+	    var Getuser = localStorage.getItem("CMS_userid");
 
 	    var paramsHTML = {};
+	    paramsHTML.user = Getuser;
 	    paramsHTML.action = action;
 	    paramsHTML.article_id = article_id;
 	    paramsHTML.article_title = article_title;
@@ -162,17 +164,39 @@ function ToastPopup(popuptype, msg) {
 
 function article_publishSuccess(response)
 {
-    console.log(response);
-    $("#article_id").val("");
-    $("#article_title").val("");
-    $("#article_shortdesc").val("");
-    $("#article_longdesc").val("");
-    $("#article_longdesc").html();
-    $('#article_banner').val('');
-    $("#article_author").val("");
+    var result = response.d;
+    if (result == "success") {
+        $("#article_id").val("");
+        $("#article_title").val("");
+        $("#article_shortdesc").val("");
+        $("#article_longdesc").val("");
+        $("#article_longdesc").html();
+        $('#article_banner').val('');
+        $("#article_author").val("");
 
-    $('#check').modal('show');
-    ToastPopup("Success", "Article added successfully");
+
+        $("#popup_msg").text("Article update successfully");
+        $("#check").find(":button").attr("onclick", "window.location.href = 'CMS_article_list.aspx'");
+        $('#check').modal('show');
+
+       // onclick = " window.location.href = 'CMS_article_list.aspx'"
+        //window.location.href = "CMS_article_list.aspx";
+       
+
+    }
+    else {
+
+        $("#popup_msg").text(" fail to update Article");
+        $('#check').modal('show');
+        console.log(response);
+        window.location.href = "CMS_article_list.aspx";
+
+
+    }
+
+   
+  
+    //ToastPopup("Success", "Article added successfully");
    // window.location.href = "CMS_article.aspx";
     // on success show submit msg and redirect to the listing page.
    // Redirect(CMS_article_list.aspx);
@@ -188,36 +212,55 @@ function article_publishFail(response) {
 ///---------------------------------///
 
 $(document).ready(function () {
-    var url = $(location).attr("href");
-    if (url.includes("CMS_article")) 
-    {
-       
 
 
-        var CheckEditArticle = localStorage.getItem("EditArticle");
-        localStorage.removeItem('EditArticle'); // clear local storage
-       
-        if (CheckEditArticle != null || CheckEditArticle != undefined) {
+    var Check_login = localStorage.getItem("login_session");
+    if (Check_login == "true") {
+
+        var url = $(location).attr("href");
+        if (url.includes("CMS_article")) {
+
+
+
+            var CheckEditArticle = localStorage.getItem("EditArticle");
+            localStorage.removeItem('EditArticle'); // clear local storage
+
+            if (CheckEditArticle != null || CheckEditArticle != undefined) {
+            }
+            CheckEditArticle = jQuery.parseJSON(CheckEditArticle);
+            var result = CheckEditArticle;
+            $.each(result.Table, function () {
+                var id = this.id;
+                var title = this.title;
+                var short_desc = this.short_desc;
+                var long_desc = this.long_desc;
+                var long_desc_html = atob(long_desc);
+                var author = this.author;
+
+                $("#article_id").val(id);
+                $("#article_title").val(title);
+                $("#article_shortdesc").val(short_desc);
+                $("#article_longdesc").html(long_desc_html);
+                $("#article_author").val(author);
+
+
+
+            });
         }
-        CheckEditArticle = jQuery.parseJSON(CheckEditArticle);
-        var result = CheckEditArticle;
-        $.each(result.Table, function () {
-            var id = this.id;
-            var title = this.title;
-            var short_desc = this.short_desc;
-            var long_desc = this.long_desc;
-            var long_desc_html = atob(long_desc);
-            var author = this.author;
-
-            $("#article_id").val(id);
-            $("#article_title").val(title);
-            $("#article_shortdesc").val(short_desc);
-            $("#article_longdesc").html(long_desc_html);
-            $("#article_author").val(author);
-
-           
-
-        });
+        
     }
+
+    else {
+        SessionExpity();
+    }
+
+    
     
 });
+
+
+function SessionExpity()
+{
+    localStorage.clear();
+    window.location.href = "CMS_Login.aspx";
+}

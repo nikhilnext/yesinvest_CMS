@@ -12,7 +12,7 @@ using System.Web.UI.WebControls;
 public partial class CMS_article_list : System.Web.UI.Page
 {
 
-    public static string conn = System.Configuration.ConfigurationManager.ConnectionStrings["dbStringnew"].ConnectionString;
+   // public static string conn = System.Configuration.ConfigurationManager.ConnectionStrings["dbStringnew"].ConnectionString;
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -35,7 +35,7 @@ public partial class CMS_article_list : System.Web.UI.Page
 
         try
         {
-            using (SqlConnection con = new SqlConnection(conn))
+            using (SqlConnection con = new SqlConnection(commonfunction.conn))
             {
                 using (SqlCommand cmd = new SqlCommand())
                 {
@@ -68,7 +68,7 @@ public partial class CMS_article_list : System.Web.UI.Page
     
 
     [WebMethod(EnableSession = true)]
-    public static string ModifyArticleListdata(string action,string article_id, string article_title, string article_shortdesc, string article_banner, string article_longdesc , string article_author)
+    public static string ModifyArticleListdata(string user, string action,string article_id, string article_title, string article_shortdesc, string article_banner, string article_longdesc , string article_author)
     {
 
         string response = string.Empty;
@@ -76,7 +76,7 @@ public partial class CMS_article_list : System.Web.UI.Page
 
         try
         {
-           string session = commonfunction.CheckCMS_Sesion("nikhil");
+           string session = commonfunction.CheckCMS_Sesion(user);
 
             // user will be come in request string users
             // check session of user / admin ---- session created at the time of login 
@@ -89,7 +89,7 @@ public partial class CMS_article_list : System.Web.UI.Page
             }
 
 
-            using (SqlConnection con = new SqlConnection(conn))
+            using (SqlConnection con = new SqlConnection(commonfunction.conn))
             {
                 using (SqlCommand cmd = new SqlCommand())
                 {

@@ -69,6 +69,13 @@ public partial class CMS_Fileupload : System.Web.UI.Page
 
         try
         {
+
+            string session = commonfunction.CheckCMS_Sesion(userid);
+            if (session == "")
+            {
+                return "unuthorized";
+            }
+
             using (SqlConnection con = new SqlConnection(commonfunction.conn))
             {
                 using (SqlCommand cmd = new SqlCommand())

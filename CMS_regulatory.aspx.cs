@@ -12,7 +12,7 @@ public partial class CMS_regulatory : System.Web.UI.Page
 {
 
 
-    public static string conn = System.Configuration.ConfigurationManager.ConnectionStrings["dbStringnew"].ConnectionString;
+   // public static string conn = System.Configuration.ConfigurationManager.ConnectionStrings["dbStringnew"].ConnectionString;
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -20,14 +20,21 @@ public partial class CMS_regulatory : System.Web.UI.Page
 
 
     [WebMethod(EnableSession = true)]
-    public static string ModifySebidata(int month, int begin, int during, int pending, string reason, int resolve)
+    public static string ModifySebidata(string user,int month, int begin, int during, int pending, string reason, int resolve)
     {
 
         string response = string.Empty;
        
         try
         {
-            using (SqlConnection con = new SqlConnection(conn))
+
+            string session = commonfunction.CheckCMS_Sesion(user);
+            if (session == "")
+            {
+                return "unuthorized";
+            }
+
+            using (SqlConnection con = new SqlConnection(commonfunction.conn))
             {
                 using (SqlCommand cmd = new SqlCommand())
                 {

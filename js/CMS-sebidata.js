@@ -59,9 +59,10 @@ function sebi_change()
     var pending1  = $("#pending").val();
     var  reason1 = $("#reason").val();
     var resolve1 = $("#resolve").val();
-
+    var Getuser = localStorage.getItem("CMS_userid");
 
     var paramsHTML = {};
+    paramsHTML.user = Getuser;
     paramsHTML.month = month1;
     paramsHTML.begin = begin1;
     paramsHTML.during = during1;
@@ -74,11 +75,21 @@ function sebi_change()
 
 function sebi_changeSuccess(response)
 {
-    console.log(response);
+
+    var result = response.d;
+    if (result == "success") {
+        $('#popup_msg').text('Data updated successfully.');
+        $("#check").find(":button").attr("onclick", "GetSebiData()");
+        $('#check').modal('show');
+
+
+    }
+
+    //console.log(response);
     
 
-    $('#check').modal('show');
-    GetSebiData();
+    //$('#check').modal('show');
+   // GetSebiData();
    // ToastPopup("Success", "Article added successfully");
 
 }

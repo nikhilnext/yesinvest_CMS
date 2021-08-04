@@ -17,7 +17,7 @@ function login_check() {
     paramsHTML.userid = id;
     paramsHTML.pass = pass;
     paramsHTML = JSON.stringify(paramsHTML);
-    APIcall("CMS_login.aspx/login", paramsHTML, loginSuccess, loginFail);
+    LoginAPIcall("CMS_login.aspx/login", paramsHTML, loginSuccess, loginFail);
     }
 
 }
@@ -34,7 +34,21 @@ function loginSuccess(response) {
 
     if (valid == "authenticated") {
         var loginsession = "true";
+        var usertype = result.Table[0].usertype;
+        var user = result.Table[0].userid;
+
         localStorage.setItem("login_session", loginsession);
+        localStorage.setItem("CMS_usertype", usertype);
+        localStorage.setItem("CMS_userid", user);
+
+        $("#userid").val("");
+        $("#password").val("");
+        $("#login_error").text("");
+
+        window.location.href = "CMS_pages.aspx";
+
+        
+
         //   redirect to CMS home page
     }
     else {
@@ -50,9 +64,35 @@ function loginFail(response) {
 
 }
 
+function LoginAPIcall(url, data, successEvent, failureEvent) {
+
+    $.ajax({
+
+        type: "POST",
+
+        crossDomain: true,
+
+        url: url,
+
+        data: data,
+
+        contentType: "application/json; charset=utf-8",
+
+        datatype: "jsondata",
+
+        success: successEvent,
+
+        error: failureEvent,
+
+        async: "true"
+
+
+    });
+}
+
 
 
 $(document).ready(function () {
 
- 
+    localStorage.clear();
 });

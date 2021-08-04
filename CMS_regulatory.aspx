@@ -90,7 +90,7 @@
 
 
 
-            <section class="modal fade" id="check" role="dialog">
+           <%-- <section class="modal fade" id="check" role="dialog">
     <div class="modal-dialog login-dialog" style="margin-top: 21px;">
         <div class="modal-content">
            
@@ -104,7 +104,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>--%>
             
 
 

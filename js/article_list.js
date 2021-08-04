@@ -78,7 +78,10 @@ function Delete_article(obj)
     article_id = parseInt(article_id);
     action = "delete";
 
+    var Getuser = localStorage.getItem("CMS_userid");
+
     var paramsHTML = {};
+    paramsHTML.user = Getuser;
     paramsHTML.action = action;
     paramsHTML.article_id = article_id;
     paramsHTML.article_title = "";

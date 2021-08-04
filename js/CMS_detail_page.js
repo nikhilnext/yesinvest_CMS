@@ -4,7 +4,11 @@ var action;
 
 function getCMSPageHTML(pagename,action) {
     // var id = $(obj).attr("data-articleid");
+
+    var Getuser = localStorage.getItem("CMS_userid");
+
     var paramsHTML = {};
+    paramsHTML.user = Getuser;
     paramsHTML.pagename = pagename;
     paramsHTML.mode = action;
     paramsHTML = JSON.stringify(paramsHTML);
@@ -44,8 +48,11 @@ function Pagepublish() {
     var gethtml = $("#CMS_detail_page").html();
     console.log(gethtml);
 
+    var Getuser = localStorage.getItem("CMS_userid");
+
     var base64convert = window.btoa(unescape(encodeURIComponent(gethtml)))
     var paramsHTML = {};
+    paramsHTML.user = Getuser;
     paramsHTML.PageName = pagename;
     paramsHTML.PageData = base64convert;
     paramsHTML.userid = "nikhil";
@@ -63,7 +70,10 @@ function PagepublishSuccess(response)
     if (result == "success")
     {
         $('#popup_msg').text('Page published successfully.');
+        $("#check").find(":button").attr("onclick", "window.location.href = 'CMS_pages.aspx'");
         $('#check').modal('show');
+
+      
     }
 }
 

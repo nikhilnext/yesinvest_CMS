@@ -86,7 +86,7 @@
                                                 <li class="tickspace " style="list-style-image: url(images/red-tick.png)">Available for Cash and Future trades</li>
                                             </ul>
                                             <p text-align: left">
-                                                &nbsp; To know more, <strong>SMS YESINVEST COVER to 9911873095<strong>
+                                                 To know more, <strong>SMS YESINVEST COVER to 9911873095<strong>
                                                 </strong></strong>
                                             </p>
                                             <h2 style="border-top: 1px solid #ccc; padding-top: 12px; font-weight: normal !important; font-size: 20px">BRACKET ORDER</h2>

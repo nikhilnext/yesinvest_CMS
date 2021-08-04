@@ -1,0 +1,101 @@
+var gethtml = $("#standard_documents_policies_page").html(); 
+//console.log(gethtml);
+
+var base64convert = window.btoa(unescape(encodeURIComponent(gethtml)))
+console.log(base64convert)
+
+
+
+
+
+
+
+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJiYW5uZXJfY29udGFpbmVyIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJyZWFkY3J1bWJfc2VjIj48c3BhbiBjbGFzcz0ibWFpbl9tZW51Ij48YSBocmVmPSJob21lLmFzcHgiPkhvbWU8L2E+ICZndDsgPHNwYW4gY2xhc3M9InN1Yl9tZW51Ij5TdGFuZGFyZCBEb2N1bWVudHM8L3NwYW4+PC9zcGFuPiA8L2Rpdj4KCiAgICAgICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InNlY3VyaXRpZXNfc2VjIHRleHQtY2VudGVyIj4KICAgICAgICAgICAgICAgIDxoMSBjbGFzcz0iIj5TdGFuZGFyZCBEb2N1bWVudHM8L2gxPgoKICAgICAgICAgICAgPC9kaXY+CgoKICAgICAgICAgICAgPGRpdiBjbGFzcz0ic2VjdXJpdGllc19zZWMiPgoKCiAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDxwIHN0eWxlPSJmb250LXNpemU6IDIwcHg7IHBhZGRpbmctbGVmdDogMjBweDsiPlN0YW5kYXJkIERvY3VtZW50cyAmYW1wOyBEaXNjbGFpbWVyPC9wPgoKICAgICAgICAgICAgICAgICAgICAgCgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaSBzdHlsZT0icGFkZGluZzogMnB4OyB0ZXh0LWFsaWduOiBsZWZ0Ij4KICAgICAgICAgICAgICAgICAgICAgICAgPHN0cm9uZz48YSBocmVmPSJodHRwczovL3lzaWwuaW4vZG9jcy9kZWZhdWx0LXNvdXJjZS9maWxlcy9zdGFuZGFyZC1kaXNjbGFpbWVyLnBkZiIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJvZmZlciIgc3R5bGU9InRleHQtZGVjb3JhdGlvbjogbm9uZTsgZm9udC1zaXplOiAxNHB4Ij48c3Ryb25nPllTTCBTdGFuZGFyZCBEaXNjbGFpbWVyPC9zdHJvbmc+PC9hPgogICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N0cm9uZz4KCiAgICAgICAgICAgICAgICAgICAgPC9saT4KCiAgICAgICAgICAgICAgICAgICAgPGxpIHN0eWxlPSJwYWRkaW5nOiAycHg7IHRleHQtYWxpZ246IGxlZnQiPgogICAgICAgICAgICAgICAgICAgICAgICA8c3Ryb25nPiZuYnNwOzxhIGhyZWY9Imh0dHBzOi8veXNpbC5pbi9kb2NzL2RlZmF1bHQtc291cmNlL2RlZmF1bHQtZG9jdW1lbnQtbGlicmFyeS9waWEtZGlzY2xhaW1lci5wZGYiIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0ib2ZmZXIiIHN0eWxlPSJ0ZXh0LWRlY29yYXRpb246IG5vbmU7ICBmb250LXNpemU6IDE0cHgiIHRpdGxlPSJQSUEgRGlzY2xhaW1lciI+UElBIERpc2NsYWltZXI8L2E+PC9zdHJvbmc+CgogICAgICAgICAgICAgICAgICAgIDwvbGk+CgogICAgICAgICAgICAgICAgICAgIDxsaSBzdHlsZT0icGFkZGluZzogMnB4OyB0ZXh0LWFsaWduOiBsZWZ0Ij4KICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly95c2lsLmluL2RvY3MvZGVmYXVsdC1zb3VyY2UvZGVmYXVsdC1kb2N1bWVudC1saWJyYXJ5L2ZpbmFsX3BhcnQtYmNkXzA2LTAxLTIxLnBkZj9zZnZyc249ODJhYWUyYjhfMCIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJvZmZlciI+PHN0cm9uZz5QYXJ0IEItQy1EPC9zdHJvbmc+PC9hPgoKICAgICAgICAgICAgICAgICAgICA8L2xpPgoKICAgICAgICAgICAgICAgICAgICA8bGkgc3R5bGU9InBhZGRpbmc6IDJweDsgdGV4dC1hbGlnbjogbGVmdCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxzdHJvbmc+PGEgaHJlZj0iaHR0cHM6Ly95c2lsLmluL2RvY3MvZGVmYXVsdC1zb3VyY2UvZGVmYXVsdC1kb2N1bWVudC1saWJyYXJ5L3Byb2R1Y3QtZGlzY2xhaW1lcmE2ZGIyNmYwMTVhMTQxODI4YTRlN2VjN2VmNjNmMDEwLnBkZj9zZnZyc249ZjQ3ZWJmNjFfMCI+IFByb2R1Y3QgRGlzY2xhaW1lcjwvYT48L3N0cm9uZz4KCiAgICAgICAgICAgICAgICAgICAgPC9saT4KICAgICAgICAgICAgICAgIDwvdWw+CgoKICAgICAgICAgICAgIAoKICAgICAgICAgICAgICAgIDxwIHN0eWxlPSJmb250LXNpemU6IDIwcHg7IHBhZGRpbmctbGVmdDogMjBweDsiPlByb2R1Y3Qgb2ZmZXJzIGFuZCBUJmFtcDtDJ3M8L3A+CgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT48c3Ryb25nPjxhIGhyZWY9Ii9kb2NzL2RlZmF1bHQtc291cmNlL2RlZmF1bHQtZG9jdW1lbnQtbGlicmFyeS9pc2lwX2VzaXAtdG5jX2ZpbmFsXzExLTAxLXQyMS5wZGY/c2Z2cnNuPTllOTIyMWFmXzAiIHRpdGxlPSJpU0lQX1QmYW1wO0MiPmlTSVBfVCZhbXA7QzwvYT48L3N0cm9uZz48L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT48c3Ryb25nPjxhIGhyZWY9Imh0dHBzOi8veXNpbC5pbi9kb2NzL2RlZmF1bHQtc291cmNlL2ZpbGVzL3JhLWludi0tLXRlcm1zLW9mLXNlcnZpY2UtdjYtZmluYWwucGRmP3NmdnJzbj03ZTI2YTYxYV8yIj5XZWFsdGggQmFza2V0c19UJmFtcDtDPC9hPjwvc3Ryb25nPjwvbGk+CiAgICAgICAgICAgICAgICA8L3VsPgoKCiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgIDxwIHN0eWxlPSJmb250LXNpemU6IDIwcHg7IHBhZGRpbmctbGVmdDogMjBweDsiPkZBUXM8L3A+CgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT48c3Ryb25nPjxhIGhyZWY9Ii9kb2NzL2RlZmF1bHQtc291cmNlL2RlZmF1bHQtZG9jdW1lbnQtbGlicmFyeS9mYXFzX3lzbHRyYWRpbmdhYy5wZGY/c2Z2cnNuPTdjNTM1ZGQxXzAiIHRhcmdldD0iX2JsYW5rIiB0aXRsZT0iVHJhZGluZyBBL2MiPlRyYWRpbmcgQS9jPC9hPjwvc3Ryb25nPjwvbGk+CiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPHAgc3R5bGU9InBhZGRpbmc6IDJweDsgdGV4dC1hbGlnbjogbGVmdCI+CiAgICAgICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMjBweCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxicj4KICAgICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgCgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgCgogICAgICAgIA==
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------
+
+ <div id="standard_documents_policies_page" class="maincontainer">
+            <section class="banner_container">
+                <div class="breadcrumb_sec"><span class="main_menu"><a href="home.aspx">Home</a> &gt; <span class="sub_menu">Standard Documents</span></span> </div>
+
+            </section>
+
+            <div class="securities_sec text-center">
+                <h1 class="">Standard Documents</h1>
+
+            </div>
+
+
+            <div class="securities_sec">
+
+
+                 
+               
+               
+                <p style="font-size: 20px; padding-left: 20px;">Standard Documents & Disclaimer</p>
+
+                     
+
+                <ul>
+                    <li style="padding: 2px; text-align: left">
+                        <strong><a href="https://ysil.in/docs/default-source/files/standard-disclaimer.pdf" target="_blank" class="offer" style="text-decoration: none; font-size: 14px"><strong>YSL Standard Disclaimer</strong></a>
+                           </strong>
+
+                    </li>
+
+                    <li style="padding: 2px; text-align: left">
+                        <strong>&nbsp;<a href="https://ysil.in/docs/default-source/default-document-library/pia-disclaimer.pdf" target="_blank" class="offer" style="text-decoration: none;  font-size: 14px" title="PIA Disclaimer">PIA Disclaimer</a></strong>
+
+                    </li>
+
+                    <li style="padding: 2px; text-align: left">
+                        <a href="https://ysil.in/docs/default-source/default-document-library/final_part-bcd_06-01-21.pdf?sfvrsn=82aae2b8_0" target="_blank" class="offer" ><strong>Part B-C-D</strong></a>
+
+                    </li>
+
+                    <li style="padding: 2px; text-align: left">
+                        <strong><a href="https://ysil.in/docs/default-source/default-document-library/product-disclaimera6db26f015a141828a4e7ec7ef63f010.pdf?sfvrsn=f47ebf61_0"> Product Disclaimer</a></strong>
+
+                    </li>
+                </ul>
+
+
+             
+
+                <p style="font-size: 20px; padding-left: 20px;">Product offers and T&amp;C's</p>
+
+                <ul>
+                    <li><strong><a href="/docs/default-source/default-document-library/isip_esip-tnc_final_11-01-t21.pdf?sfvrsn=9e9221af_0" title="iSIP_T&amp;C">iSIP_T&amp;C</a></strong></li>
+                    <li><strong><a href="https://ysil.in/docs/default-source/files/ra-inv---terms-of-service-v6-final.pdf?sfvrsn=7e26a61a_2">Wealth Baskets_T&amp;C</a></strong></li>
+                </ul>
+
+
+            
+                 <p style="font-size: 20px; padding-left: 20px;">FAQs</p>
+
+                <ul>
+                    <li><strong><a href="/docs/default-source/default-document-library/faqs_ysltradingac.pdf?sfvrsn=7c535dd1_0" target="_blank" title="Trading A/c">Trading A/c</a></strong></li>
+                </ul>
+                <p style="padding: 2px; text-align: left">
+                    <span style="font-size: 20px">
+                        <br>
+                    </span>
+                </p>
+           
+
+            </div>
+
+              
+
+        </div>

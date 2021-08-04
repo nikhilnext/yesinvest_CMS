@@ -48,8 +48,8 @@ $(document).ready(function () {
 function fileupload()
 {
 
-    http://localhost/test%20yes/api/FileUpload/Upload
-   
+   // http://localhost/test%20yes/api/FileUpload/Upload
+    var Getuser = localStorage.getItem("CMS_userid");
     var upload_category = $("#file_category").val();
     var Upload_filename = fileName;
     var filebases64 = "";
@@ -60,7 +60,7 @@ function fileupload()
     paramsHTML.data = filedata;
     paramsHTML.filename = Upload_filename;
     paramsHTML.filetype = Upload_filetype;
-    paramsHTML.userid = "nikhil";
+    paramsHTML.userid = Getuser;
     paramsHTML.category = upload_category;
     paramsHTML = JSON.stringify(paramsHTML);
 
@@ -81,6 +81,7 @@ function fileuploadSuccess(response)
         var upload_category = $("#file_category").val();
         Upload_filetype = $("#file_type").val();
         var Upload_filename = fileName;
+        var Getuser = localStorage.getItem("CMS_userid");
         // call db save API
 
         var paramsHTML = {};
@@ -88,7 +89,7 @@ function fileuploadSuccess(response)
         paramsHTML.filename = Upload_filename;
         paramsHTML.filetype = Upload_filetype;
         paramsHTML.filepath = upload_path;
-        paramsHTML.userid = "nikhil";
+        paramsHTML.userid = Getuser;
         paramsHTML.category = upload_category;
         paramsHTML = JSON.stringify(paramsHTML);
 

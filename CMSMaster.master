@@ -80,6 +80,11 @@
      
 				
               </ul>
+
+                <ul class="nav navbar-nav navbar-right ">
+
+<li><a onclick="CMS_logout()" style="color: white; background-color: black;cursor: pointer;">Logout</a> </li>
+ </ul>
             </div>
           </nav>
 

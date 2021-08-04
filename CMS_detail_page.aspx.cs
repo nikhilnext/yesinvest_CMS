@@ -18,7 +18,7 @@ public partial class CMS_detail_page : System.Web.UI.Page
 
 
     [WebMethod(EnableSession = true)]
-    public static string CMS_detail_HTML(string pagename, string mode)
+    public static string CMS_detail_HTML(string user,string pagename, string mode)
     {
         string response = string.Empty;
         string DealJson = string.Empty;
@@ -26,6 +26,20 @@ public partial class CMS_detail_page : System.Web.UI.Page
 
         try
         {
+
+            string session = commonfunction.CheckCMS_Sesion(user);
+
+            // user will be come in request string users
+            // check session of user / admin ---- session created at the time of login 
+            //sp: [dbo].[CMS_CheckUserSession]
+            // if present continue else unauthorized error
+
+            if (session == "")
+            {
+                return "unuthorized";
+            }
+
+
             using (SqlConnection con = new SqlConnection(commonfunction.conn))
             {
                 using (SqlCommand cmd = new SqlCommand())
@@ -58,7 +72,7 @@ public partial class CMS_detail_page : System.Web.UI.Page
     }
 
     [WebMethod(EnableSession = true)]
-    public static string CMS_detail_ModifyHTML(string PageName, string PageData, string userid)
+    public static string CMS_detail_ModifyHTML(string user,string PageName, string PageData, string userid)
     {
         string response = string.Empty;
         string DealJson = string.Empty;
@@ -66,6 +80,13 @@ public partial class CMS_detail_page : System.Web.UI.Page
 
         try
         {
+
+            string session = commonfunction.CheckCMS_Sesion(user);
+            if (session == "")
+            {
+                return "unuthorized";
+            }
+
             using (SqlConnection con = new SqlConnection(commonfunction.conn))
             {
                 using (SqlCommand cmd = new SqlCommand())
