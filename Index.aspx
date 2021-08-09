@@ -5,6 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
+
+   
+     <div class="sfContentBlock">
     <div class="container">
         <div id="index_page" class="maincontainer">
 
@@ -12,6 +15,7 @@
 
         </div>
 </div>
+         </div>
 
 </asp:Content>
 

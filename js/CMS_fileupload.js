@@ -55,9 +55,10 @@ function fileupload()
     var filebases64 = "";
     var userid = "nikhil";
     var Upload_filetype = filetype;
+    var Upload_data = filedata.split(",")[1];
 
     var paramsHTML = {};
-    paramsHTML.data = filedata;
+    paramsHTML.data = Upload_data;
     paramsHTML.filename = Upload_filename;
     paramsHTML.filetype = Upload_filetype;
     paramsHTML.userid = Getuser;

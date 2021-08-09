@@ -29,9 +29,9 @@
 
 
                 <!-- 1st tab -->
-                <div id="press_releases">
+                <div id="press_releases" class="row tab-content">
 
-                    <div id="article_list" class="row mrt40">
+                    <div id="article_list" class=" mrt40">
                     </div>
 
 

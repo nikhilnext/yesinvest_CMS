@@ -7,31 +7,40 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YesIinvest.in CMS", "D:\YES
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_57249"
-		Debug.AspNetCompiler.PhysicalPath = "D:\YES\yes project\YesIinvest.in CMS\"
+		Debug.AspNetCompiler.PhysicalPath = "..\YesIinvest.in CMS\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57249\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_57249"
-		Release.AspNetCompiler.PhysicalPath = "D:\YES\yes project\YesIinvest.in CMS\"
+		Release.AspNetCompiler.PhysicalPath = "..\YesIinvest.in CMS\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57249\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "57249"
-		SlnRelativePath = "D:\YES\yes project\YesIinvest.in CMS\"
+		SlnRelativePath = "..\YesIinvest.in CMS\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inhouse_CMS_API", "..\Inhouse_CMS_API\Inhouse_CMS_API\Inhouse_CMS_API.csproj", "{21BC1E5C-5F28-4865-9A0B-5BE399755886}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{18F49815-BFF3-4A4F-BFC2-69C538B9648C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{18F49815-BFF3-4A4F-BFC2-69C538B9648C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F49815-BFF3-4A4F-BFC2-69C538B9648C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F49815-BFF3-4A4F-BFC2-69C538B9648C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{21BC1E5C-5F28-4865-9A0B-5BE399755886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BC1E5C-5F28-4865-9A0B-5BE399755886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BC1E5C-5F28-4865-9A0B-5BE399755886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BC1E5C-5F28-4865-9A0B-5BE399755886}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

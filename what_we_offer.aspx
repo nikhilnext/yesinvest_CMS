@@ -305,18 +305,18 @@
         Following are some of the key points (but not limited to) that are used in process of shortlisting companies for each strategy:&nbsp;
                                         </p>
                                         <ul>
-                                            <li class="tickspace "  font-size: 14px; list-style-image: url(images/red-tick.png)">Analysis of company business</li>
-                                            <li class="tickspace "  font-size: 14px; list-style-image: url(images/red-tick.png)">Growth Sustenance of business model</li>
-                                            <li class="tickspace "  font-size: 14px; list-style-image: url(images/red-tick.png)">Economic moat &amp; long term competitive advantage</li>
-                                            <li class="tickspace "  font-size: 14px; list-style-image: url(images/red-tick.png)">Earnings visibility &amp; valuation</li>
-                                            <li class="tickspace "  font-size: 14px; list-style-image: url(images/red-tick.png)">Pedigree of company management</li>
+                                            <li class="tickspace "  style=" font-size: 14px; list-style-image: url(images/red-tick.png)">Analysis of company business</li>
+                                            <li class="tickspace "   style="font-size: 14px; list-style-image: url(images/red-tick.png)">Growth Sustenance of business model</li>
+                                            <li class="tickspace "   style="font-size: 14px; list-style-image: url(images/red-tick.png)">Economic moat &amp; long term competitive advantage</li>
+                                            <li class="tickspace "   style="font-size: 14px; list-style-image: url(images/red-tick.png)">Earnings visibility &amp; valuation</li>
+                                            <li class="tickspace "   style="font-size: 14px; list-style-image: url(images/red-tick.png)">Pedigree of company management</li>
                                             </ul>
                                             <br>
                                             <div class="col-sm-12" style="margin-left: -16px">
                                                 <span style="font-size: 22px; font-family: gill1-webfont; color: #808080">Strategy offerings&nbsp;<br>
                                                     <br>
                                                 </span>
-                                                <ul style="margin-left: -17px">
+                                                <ul>
                                                     <li class="tickspace " style="color: #404040; font-size: 14px; list-style-image: url(images/red-tick.png) !important"><strong>PRS NIFTY Plus</strong><br>
                                                         <ul style="list-style: disc !important">
                                                             <li>Investment in stocks and sectors within NIFTY 50 basket with a clear objective&nbsp;
