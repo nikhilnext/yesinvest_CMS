@@ -10,6 +10,7 @@ body{ margin:0 auto; padding:0px; font-size:14px; font-family: 'Lato', sans-seri
 .retail_table_center td   { padding: 8px; border: 1px solid; border-left: 1px solid}
 .publish_button { padding: 5px 20px; text-align: center; background-color: #4CAF50; color: white; border: none;}
 .article_cart{border: solid 1px #979797; font-weight: normal; height: 500px; margin-bottom: 20px;}
+.article_padding { padding: 20px 30px;}
 
 
 .pd0{padding:0px;}
