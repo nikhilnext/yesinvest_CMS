@@ -46,7 +46,7 @@
 
                 <div class="sec01 row container_sec">
 
-                    <div class="col-sm-12 col-md-12 ">
+                    <div class="col-sm-12 col-md-12 tab-content">
 
                         <button onclick="location.href='CMS_article.aspx'"; style="margin-bottom: 20px;" class="button button_new">Add New</button>
 

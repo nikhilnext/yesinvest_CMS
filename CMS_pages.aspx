@@ -30,7 +30,7 @@
 
                        <%-- <button onclick="location.href='CMS_article.aspx'"; style="margin-bottom: 20px;" class="button button_new">Add New</button>--%>
 
-                         <div class="all_page_list">
+                         <div class="all_page_list tab-content">
 
                      
 

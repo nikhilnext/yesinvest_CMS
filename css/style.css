@@ -84,7 +84,8 @@ section:last-child {
 .maincontainer{ background:#fff;   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);}
 .what_we_are_illu img{ text-align:center; margin:0 auto; padding:0 10px 40px;}
 .what_we_are_illu p{padding:0 45px;}
-.container_sec .tab-content{margin:0px 45px 45px; }
+/*.container_sec .tab-content{margin:0px 45px 45px; }*/  /*for research.aspx footer margin issue*/
+.container_sec .tab-content{margin:0px 45px }
 .container_sec .nav-tabs{ border-bottom:1px solid #e9e9e9; margin:0px 45px;}  
 .container_sec .nav-tabs li a{display: table-cell;  vertical-align: middle;    width: 100%; height:60px;}
 .container_sec .nav li{ width:33.33%; text-align:center; /*display:table;*/}
@@ -683,7 +684,8 @@ ul.social-media li img {
 .header-bottom .navbar-toggle {    position: absolute;    margin: 0px;    top: -56px;    left: 0px;    background: none !important;}	
 .container {  width: 100%;}
 .what_we_are_illu p {padding: 0 15px;}
-.container_sec .tab-content{ margin:0px 15px 60px;}
+.container_sec .tab-content{ margin:0px 15px} /* for global master mobile responsive tab content margin	*/
+/*.container_sec .tab-content{ margin:0px 15px 60px;}*/
 .container_sec .nav-tabs{ margin:0px;}
 .container_sec .why_sec_tabs li.big {width: 27%;}
 .container_sec .nav-tabs li a{ font-size:14px;}
@@ -764,6 +766,11 @@ ul.social-media li img {
     .testCont {
         margin-top: 10px;
     }
+
+
+    .login_btn_mobresp {
+		padding: 8px 7px!important;
+	}
 }
 
 .dis {

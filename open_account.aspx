@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class=" col-md-12 col-sm-6">
 
-                            <div class="maincontainer" style="background: #ffffff">
+                            <div class="" style="background: #ffffff">
 
                                 <div class="login_sec" style="padding: 20px 80px 70px">
 
