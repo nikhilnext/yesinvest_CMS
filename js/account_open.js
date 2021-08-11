@@ -89,7 +89,7 @@ function CreateToken(fullname, city, contact, email, state) {
     params.state = state;
     params = JSON.stringify(params);
     //$("#WaitingForResponse").modal("show");
-    AjaxCallHelper("open_accout.aspx/saveData", params, CreateTokenSuccess, CreateTokenFail);
+    APIcall("open_account.aspx/saveData", params, CreateTokenSuccess, CreateTokenFail);
 }
 
 function CreateTokenSuccess(response) {
@@ -108,8 +108,19 @@ function CreateTokenSuccess(response) {
         $('#check').modal('show');
         
     }
+}
 
+function CreateTokenFail(response)
+{
+    console.log(response);
+}
 
-
-
+function validateEmail(sEmail) {
+    var regex = /^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z][a-zA-Z0-9_]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/;
+    if (regex.test(sEmail)) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }

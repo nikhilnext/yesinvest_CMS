@@ -21,6 +21,7 @@ public partial class CMS_article_list : System.Web.UI.Page
     [WebMethod(EnableSession = true)]
     public static string GetArticleListdata(string id)
     {
+
         string response = string.Empty;
         int a_id = 0;
 
@@ -35,6 +36,10 @@ public partial class CMS_article_list : System.Web.UI.Page
 
         try
         {
+
+           
+
+
             using (SqlConnection con = new SqlConnection(commonfunction.conn))
             {
                 using (SqlCommand cmd = new SqlCommand())
@@ -76,14 +81,8 @@ public partial class CMS_article_list : System.Web.UI.Page
 
         try
         {
-           string session = commonfunction.CheckCMS_Sesion(user);
-
-            // user will be come in request string users
-            // check session of user / admin ---- session created at the time of login 
-            //sp: [dbo].[CMS_CheckUserSession]
-            // if present continue else unauthorized error
-
-            if (session == "")
+            string session = commonfunction.CheckCMS_Sesion(user);
+            if (session != "true")
             {
                 return "unuthorized";
             }

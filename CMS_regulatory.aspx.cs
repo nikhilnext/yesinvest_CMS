@@ -29,7 +29,7 @@ public partial class CMS_regulatory : System.Web.UI.Page
         {
 
             string session = commonfunction.CheckCMS_Sesion(user);
-            if (session == "")
+            if (session != "true")
             {
                 return "unuthorized";
             }
@@ -69,7 +69,7 @@ public partial class CMS_regulatory : System.Web.UI.Page
         }
         catch (Exception ex)
         {
-            commonfunction.WriteLog("ModifyArticleListdata exception", ex.ToString(), DateTime.Now, DateTime.Now);
+            commonfunction.WriteLog("Modify sebi data exception", ex.ToString(), DateTime.Now, DateTime.Now);
             return "Error 404";
         }
         return response;

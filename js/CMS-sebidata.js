@@ -85,6 +85,13 @@ function sebi_changeSuccess(response)
 
     }
 
+    else if (result == "unuthorized") {
+        $('#popup_msg').text('Session invalidated.');
+        $("#check").find(":button").attr("onclick", "SessionExpity();");
+        $('#check').modal('show');
+        return false;
+    }
+
     //console.log(response);
     
 

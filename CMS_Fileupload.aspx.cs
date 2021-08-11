@@ -60,9 +60,10 @@ public partial class CMS_Fileupload : System.Web.UI.Page
     [WebMethod(EnableSession = true)]
     public static string CMS_Upload_File(string filename, string filetype, string filepath, string category, string userid)
     {
-    
+
+       // commonfunction.obj_token obj = new commonfunction.obj_token();
         // check user session 
-         
+
         string response = string.Empty;
         string DealJson = string.Empty;
 
@@ -71,7 +72,7 @@ public partial class CMS_Fileupload : System.Web.UI.Page
         {
 
             string session = commonfunction.CheckCMS_Sesion(userid);
-            if (session == "")
+            if (session != "true")
             {
                 return "unuthorized";
             }

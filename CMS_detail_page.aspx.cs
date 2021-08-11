@@ -27,16 +27,19 @@ public partial class CMS_detail_page : System.Web.UI.Page
         try
         {
 
+            //string session = commonfunction.CheckCMS_Sesion(user);
+            
+            //if (session == "")
+            //{
+            //    return "unuthorized";
+            //}
+
+
             string session = commonfunction.CheckCMS_Sesion(user);
-
-            // user will be come in request string users
-            // check session of user / admin ---- session created at the time of login 
-            //sp: [dbo].[CMS_CheckUserSession]
-            // if present continue else unauthorized error
-
-            if (session == "")
+            if (session != "true")
             {
-                return "unuthorized";
+                var result = JsonConvert.SerializeObject(session);
+                return result;
             }
 
 
@@ -72,7 +75,7 @@ public partial class CMS_detail_page : System.Web.UI.Page
     }
 
     [WebMethod(EnableSession = true)]
-    public static string CMS_detail_ModifyHTML(string user,string PageName, string PageData, string userid)
+    public static string CMS_detail_ModifyHTML(string user,string PageName, string PageData)
     {
         string response = string.Empty;
         string DealJson = string.Empty;
@@ -82,7 +85,7 @@ public partial class CMS_detail_page : System.Web.UI.Page
         {
 
             string session = commonfunction.CheckCMS_Sesion(user);
-            if (session == "")
+            if (session != "true")
             {
                 return "unuthorized";
             }
@@ -97,7 +100,7 @@ public partial class CMS_detail_page : System.Web.UI.Page
                     cmd.CommandText = "dbo.CMS_Modifypage";
                     cmd.Parameters.AddWithValue("@pagename", SqlDbType.VarChar).Value = PageName;
                     cmd.Parameters.AddWithValue("@pagedata", SqlDbType.VarChar).Value = PageData;
-                    cmd.Parameters.AddWithValue("@userid", SqlDbType.VarChar).Value = userid;
+                    cmd.Parameters.AddWithValue("@userid", SqlDbType.VarChar).Value = user;
 
                     con.Open();
                     int k = cmd.ExecuteNonQuery();

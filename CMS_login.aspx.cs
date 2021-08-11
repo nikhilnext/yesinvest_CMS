@@ -54,4 +54,90 @@ public partial class CMC_login : System.Web.UI.Page
         }
         return DealJson;
     }
+
+
+    [WebMethod(EnableSession = true)]
+    public static string CMS_logout(string userid)
+    {
+        string response;
+
+
+        try
+        {
+            using (SqlConnection con = new SqlConnection(commonfunction.conn))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.CommandText = "dbo.CMS_logout";
+                    cmd.Parameters.AddWithValue("@userid", SqlDbType.VarChar).Value = userid;
+
+
+                    con.Open();
+                    int k = cmd.ExecuteNonQuery();
+                    con.Close();
+                    if (k > 0)
+                    {
+                        response = "success";
+                    }
+                    else
+                    {
+                        response = "error";
+
+                    }
+
+                   
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            commonfunction.WriteLog("CMS_logout exception", ex.ToString(), DateTime.Now, DateTime.Now);
+            return "Error 404";
+        }
+        return response;
+    }
+
+
+    [WebMethod(EnableSession = true)]
+    public static string CMS_checktoken(string userid)
+    {
+        string response;
+
+
+        try
+        {
+            using (SqlConnection con = new SqlConnection(commonfunction.conn))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.CommandText = "dbo.CMS_tokencheck";
+                    cmd.Parameters.AddWithValue("@userid", SqlDbType.VarChar).Value = userid;
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+
+                        DataSet ds = new DataSet();
+                        adapter.Fill(ds);
+                        response = JsonConvert.SerializeObject(ds);
+                    }
+
+
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            commonfunction.WriteLog("CMS_logout exception", ex.ToString(), DateTime.Now, DateTime.Now);
+            return "Error 404";
+        }
+        return response;
+    }
 }

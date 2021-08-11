@@ -21,7 +21,7 @@
 
                 <div class="sec01 row container_sec">
 
-                    <div class="col-sm-12 col-md-12 ">
+                    <div class="col-sm-12 col-md-12 tab-content">
 
                         <div class="row" style="margin-bottom: 10px;">
                         <div class="col-md-4"><span>File category : </span></div>

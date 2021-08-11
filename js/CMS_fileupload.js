@@ -108,7 +108,25 @@ function fileuploadFail(response) {
 
 function CMS_UploadSuccess(response)
 {
-    console.log(response);
+   // console.log(response);
+    var result = response.d;
+    if (result == "success") {
+        $("#popup_msg").text("File uploaded successfully");
+        $("#check").find(":button").attr("onclick", "window.location.href = 'CMS_Alluploads.aspx'");
+        $('#check').modal('show');
+    }
+    else if (result == "unuthorized") {
+        $('#popup_msg').text('Session invalidated.');
+        $("#check").find(":button").attr("onclick", "SessionExpity();");
+        $('#check').modal('show');
+        return false;
+    }
+    else {
+        $("#popup_msg").text("Unable to upload the file. Please contact administrator.s");
+        $("#check").find(":button").attr("onclick", "window.location.href = 'CMS_Alluploads.aspx'");
+        $('#check').modal('show');
+
+    }
 }
 
 function CMS_UploadFail(response) {

@@ -18,6 +18,17 @@ function getCMSPageHTML(pagename,action) {
 
 function getCMSPageHTMLSuccess(response) {
     var result = JSON.parse(response.d);
+
+    // if session false then session expiry 
+    if (result == "false")
+    {
+        $('#popup_msg').text('Session invalidated.');
+        $("#check").find(":button").attr("onclick", " SessionExpity();");
+        $('#check').modal('show');
+       
+        return false;
+    }
+
     var CurrentHTML;
     if (result.Table != 0) {
         var id = result.Table[0].page_name;
@@ -55,8 +66,7 @@ function Pagepublish() {
     paramsHTML.user = Getuser;
     paramsHTML.PageName = pagename;
     paramsHTML.PageData = base64convert;
-    paramsHTML.userid = "nikhil";
-    paramsHTML = JSON.stringify(paramsHTML);
+    paramsHTML = JSON.stringify(paramsHTML);    
 
 
     APIcall("CMS_detail_page.aspx/CMS_detail_ModifyHTML", paramsHTML, PagepublishSuccess, PagepublishFail);
@@ -74,6 +84,14 @@ function PagepublishSuccess(response)
         $('#check').modal('show');
 
       
+    }
+
+    else if (result == "unuthorized") {
+        $('#popup_msg').text('Session invalidated.');
+        $("#check").find(":button").attr("onclick", "SessionExpity();");
+        $('#check').modal('show');
+        //  SessionExpity();
+        return false;
     }
 }
 

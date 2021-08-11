@@ -184,6 +184,15 @@ function article_publishSuccess(response)
        
 
     }
+
+    else if (result == "unuthorized")
+    {
+        $('#popup_msg').text('Session invalidated.');
+        $("#check").find(":button").attr("onclick", "SessionExpity();");
+        $('#check').modal('show');
+      //  SessionExpity();
+        return false;
+    }
     else {
 
         $("#popup_msg").text(" fail to update Article");
@@ -264,3 +273,58 @@ function SessionExpity()
     localStorage.clear();
     window.location.href = "CMS_Login.aspx";
 }
+
+
+function CMS_logout()
+{
+
+    var Check_user = localStorage.getItem("CMS_userid");
+    //  API call to remove session 
+
+    var paramsHTML = {};
+    paramsHTML.user = Check_user;
+    paramsHTML = JSON.stringify(paramsHTML);
+    APIcall("CMS_login.aspx/CMS_logout", paramsHTML, CMS_logoutSuccess, CMS_logoutFail);
+}
+
+function CMS_logoutSuccess(response)
+{
+    var result = response;
+    if (result == "success")
+    {
+        SessionExpity();
+    }
+   
+}
+
+function CMS_logoutFail(response)
+{
+    console.log(response);
+
+}
+
+function CMS_tokencheck()
+{
+    var Check_user = localStorage.getItem("CMS_userid");
+    var paramsHTML = {};
+    paramsHTML.user = Check_user;
+    paramsHTML = JSON.stringify(paramsHTML);
+    APIcall("CMS_login.aspx/CMS_checktoken", paramsHTML, CMS_tokencheckSuccess, CMS_tokencheckFail);
+
+}
+
+function CMS_tokencheckSuccess(response)
+{
+    var result = response;
+    if (result != "success")
+    {
+        SessionExpity();
+    }
+
+}
+
+function CMS_tokencheckFail(response)
+{
+    SessionExpity();
+}
+

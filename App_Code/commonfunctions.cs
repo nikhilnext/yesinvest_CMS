@@ -21,6 +21,11 @@ public class commonfunction
         //
     }
 
+    public class obj_token
+    {
+        public string status { get; set; }
+    }
+
 
     public static void WriteLog(string FunctionName, string Parameters, DateTime Start, DateTime End, string Message = "")
     {
@@ -63,8 +68,18 @@ public class commonfunction
                     cmd.Connection = con;
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.CommandText = "dbo.CMS_CheckUserSession"; //[dbo].[CMS_CheckUserSession]
+                    cmd.CommandText = "dbo.CMS_tokencheck";    //CMS_tokencheck
+                  //  cmd.CommandText = "dbo.CMS_CheckUserSession"; //[dbo].[CMS_CheckUserSession]
                     cmd.Parameters.AddWithValue("@userid", SqlDbType.VarChar).Value = userid;
+
+
+                    //using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    //{
+
+                    //    DataSet ds = new DataSet();
+                    //    adapter.Fill(ds);
+                    //    result = JsonConvert.SerializeObject(ds);
+                    //}
 
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                     {
@@ -73,13 +88,19 @@ public class commonfunction
                         adapter.Fill(ds);
 
                         //if (ds.Tables.Count > 0)
-                            if (ds.Tables[0].Rows.Count > 0)
-                            {
-                            result = ds.Tables[0].Rows[0][1].ToString();
+                        if (ds.Tables[0].Rows.Count > 0)
+                        {
+                            result = ds.Tables[0].Rows[0][0].ToString();
+                            //if (result != "true")
+                            //{
+                            //    result = "";
+                            //   // result = JsonConvert.SerializeObject(result);
+
+                            //}
                         }
-                    
+
                         // result = JsonConvert.SerializeObject(ds);
-                        
+
                     }
                 }
             }

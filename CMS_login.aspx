@@ -20,7 +20,7 @@
 
                 <div class="sec01 row container_sec">
 
-                    <div class="col-sm-12 col-md-12 ">
+                    <div class="col-sm-12 col-md-12 tab-content">
 
                         
 
