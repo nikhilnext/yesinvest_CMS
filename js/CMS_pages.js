@@ -78,7 +78,8 @@ function GetPageListFail(response) {
 function Approve_page(obj)
 {
     var name = $(obj).attr("data-pagename");
-    var CMSuserid = "CMS_admin"; // get userid from session
+    var CMSuserid = localStorage.getItem("CMS_userid");
+  //  var CMSuserid = "CMS_admin"; // get userid from session
 
     // call aprove API
 
