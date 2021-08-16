@@ -45,7 +45,7 @@
                          <div class="row" style="margin-bottom: 10px;">
                         <div class="col-md-4"></div>
                         <div  class="col-md-8 ">
-                              <button id="login" class="publish_button" onclick="login_check()" type="button">LOGIN</button>
+                              <button id="login" class=" button publish_button" onclick="login_check()" type="button">LOGIN</button>
                         
                         </div>
                         </div>

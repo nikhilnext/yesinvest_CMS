@@ -289,7 +289,7 @@ function CMS_logout()
 
 function CMS_logoutSuccess(response)
 {
-    var result = response;
+    var result = response.d;
     if (result == "success")
     {
         SessionExpity();

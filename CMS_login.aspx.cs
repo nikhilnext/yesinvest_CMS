@@ -57,7 +57,7 @@ public partial class CMC_login : System.Web.UI.Page
 
 
     [WebMethod(EnableSession = true)]
-    public static string CMS_logout(string userid)
+    public static string CMS_logout(string user)
     {
         string response;
 
@@ -72,7 +72,7 @@ public partial class CMC_login : System.Web.UI.Page
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     cmd.CommandText = "dbo.CMS_logout";
-                    cmd.Parameters.AddWithValue("@userid", SqlDbType.VarChar).Value = userid;
+                    cmd.Parameters.AddWithValue("@userid", SqlDbType.VarChar).Value = user;
 
 
                     con.Open();
